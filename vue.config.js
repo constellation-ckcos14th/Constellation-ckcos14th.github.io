@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/Constellation-ckcos14th.github.io" : "/Constellation-ckcos14th.github.io",
+  publicPath: "/Constellation-ckcos14th.github.io/"
 };
