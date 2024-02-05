@@ -1,6 +1,6 @@
 <script setup> 
   import { ref, onMounted } from 'vue';
-  import desc from '/src/works-description.json'
+  // import desc from '/src/works-description.json'
   const tabs = ref(['數學', '物理', '化學', '生物', '資訊', '地科']);
   let activeTab = ref('數學');
 

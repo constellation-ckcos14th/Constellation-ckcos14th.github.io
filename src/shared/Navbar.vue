@@ -16,18 +16,18 @@
     <div class="column-3">
 
 
-      <Login/>
+      <!-- <Login/> -->
 
       <div class="outer-links">
         <a
-          href="https://www.youtube.com/@lumine39th"
+          href="https://www.youtube.com/watch?v=aYsgsSo1aow"
           target="_blank"
           rel="noopener noreferrer"
           class="icon"
         >
       <vue-feather type="youtube" size="20"></vue-feather>
         </a>
-        <a href="https://instagram.com/luminescence_ckmsc39th_" target="_blank" rel="noopener noreferrer" class="icon">
+        <a href="https://www.instagram.com/ckcos14th.constellation/" target="_blank" rel="noopener noreferrer" class="icon">
           <vue-feather type="instagram" size="20"></vue-feather>
         </a>
       </div>
@@ -48,7 +48,6 @@
 
 <script setup>
 import {ref} from "vue";
-import Login from "./Login.vue";
 import Sidebar from "./Sidebar.vue";
 import NoHasNav from "./NoHasNav.vue";
 import feather from "feather-icons";
@@ -169,11 +168,6 @@ nav.navbar {
     width: 100px;
   }
 
-  .login-button {
-    font-size: 1.1rem;
-    width: 100px;
-  }
-
   .icon {
     padding: 18px 10px;
   }
@@ -185,11 +179,6 @@ nav.navbar {
   }
 
   .link {
-    font-size: 0.9rem;
-    width: 70px;
-  }
-
-  .login-button {
     font-size: 0.9rem;
     width: 70px;
   }

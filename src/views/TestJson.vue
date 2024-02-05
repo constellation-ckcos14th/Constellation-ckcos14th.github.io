@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
   import desc from "/src/works-description.json";
 </script>
 
@@ -8,4 +8,4 @@
     <p>{{ item.mark  }}</p>
     <p>{{ item.title }}</p>
   </div>
-</template>
+</template> -->

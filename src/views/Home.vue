@@ -1,7 +1,7 @@
 <template>
   <div class="home-page tab-page">
     <h1 id="title">台北市立建國高級中學</h1>
-    <h1>數理資優班第39屆成果發表</h1>
+    <h1>科學班第14屆成果發表</h1>
 
     <div class="group-photo div-page">
       <h2>大合照</h2>
@@ -9,8 +9,8 @@
     </div>
 
     <div class="event-info div-page">
-      <h2>Shine your own light.</h2>
-      <h2>Illuminate your own way!</h2>
+      <h2>標語?</h2>
+      <h2>標語?</h2>
 
       <div class="time-location">
 
@@ -55,7 +55,7 @@
 
 <script setup lang="ts">
 const groupPhotoSrc = "groupPhoto.jpg";
-const eventDate = "2023年5月25&26日 (週四/五)";
+const eventDate = "2024年5月20 (週一/五)";
 const eventTime = "13:00 - 17:30";
 const eventLocation = "100台北市中正區南海路56號";
 const eventDescription = `本獨立研究成果發表會旨在提倡科學研究，藉由各組別的成果報告，認識不同科目的專業領域，提升大家對於科學的愛好以及熱忱。本校數理資優班的專題研究組別共分成數學、物理、化學、生物、資訊、地科六個科目，各組對該科的知識內容進行更深一層的探討，結合文獻的探究及自己的創意，完成一篇專題獨立研究。藉由辦理本活動鼓勵數資班學生積極投入實驗研究，並讓同學們能有機會於本活動發表兩年來努力得到的成果。除此之外也希望透過這個活動促進校際間的學術交流，且讓大家能一睹學生們在專題研究過程中的收穫與成長。`;
