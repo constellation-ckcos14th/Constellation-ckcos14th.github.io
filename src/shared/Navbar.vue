@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <nav class="navbar">
     <div class="column-1">
-      <router-link :to="{ name: 'Home' }" class="homelink">Luminescence</router-link>
+      <router-link :to="{ name: 'Home' }" class="homelink">Constellation</router-link>
     </div>
 
     <div class="column-2">
@@ -20,7 +20,7 @@
 
       <div class="outer-links">
         <a
-          href="https://www.youtube.com/watch?v=aYsgsSo1aow"
+          href="https://www.youtube.com/watch?v=aPkN-x9CQGU"
           target="_blank"
           rel="noopener noreferrer"
           class="icon"

@@ -3,25 +3,25 @@
     <h1>Contact Us</h1>
     <div class="contact-methods">
       <a
-        href="mailto:39thckmsc@gmail.com"
+        href="https://www.instagram.com/ckcos14th.constellation/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fas fa-envelope"></i> <h2>Email</h2>
+        <i class="fa fa-instagram"></i> <h2>Instagram</h2>
       </a>
       <a
-        href="https://instagram.com/luminescence_ckmsc39th_"
+        href="https://github.com/constellation-ckcos14th/Constellation-ckcos14th.github.io"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fab fa-instagram"></i> <h2>Instagram</h2>
+        <i class="fa fa-github"></i> <h2>Github</h2>
       </a>
       <a
-        href="https://github.com/ckmsc39th/ckmsc39th.github.io"
+        href="https://tellonym.me/cos14.ck"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fab fa-github"></i> <h2>Github</h2>
+        <i class="fa fa-question-circle"></i><h2>TellonymQ&amp;A</h2>
       </a>
     </div>
 
