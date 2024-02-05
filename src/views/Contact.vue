@@ -7,21 +7,21 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-instagram"></i> <h2>Instagram</h2>
+        <dev class="fa fa-instagram"></dev> <h2>Instagram</h2>
       </a>
       <a
         href="https://github.com/constellation-ckcos14th/Constellation-ckcos14th.github.io"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-github"></i> <h2>Github</h2>
+        <dev class="fa fa-github" style="color:white"></dev> <h2>Github</h2>
       </a>
       <a
         href="https://tellonym.me/cos14.ck"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-question-circle"></i><h2>TellonymQ&amp;A</h2>
+        <dev class="fa fa-question-circle"></dev> <h2>匿名Q&amp;A</h2>
       </a>
     </div>
 
@@ -98,7 +98,16 @@ const teammateList = [
 
 .contact-methods h2{
   color:#007bff;
+  margin-left: 5px; 
 }
+
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+} /*把instagram icon變成彩色!*/
 
 .contact-methods h2:hover {
   text-decoration: underline;
