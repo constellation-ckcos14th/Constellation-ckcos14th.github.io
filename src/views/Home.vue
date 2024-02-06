@@ -2,18 +2,8 @@
   <div class="home-page tab-page">
     <h1 id="title">台北市立建國高級中學</h1>
     <h1>科學班第14屆成果發表</h1>
-
-    <div class="group-photo div-page">
-      <h2>大合照</h2>
-      <img :src="groupPhotoSrc" alt="Group Photo" />
-    </div>
-
     <div class="event-info div-page">
-      <h2>標語?</h2>
-      <h2>標語?</h2>
-
       <div class="time-location">
-
         <div class="event-time">
           <h2>舉辦時間</h2>
           <div class="event-time-details">
@@ -33,7 +23,16 @@
             <a :href="googleMapsLink" target="_blank" rel="noopener">在Google Maps上查看</a>
           </div>
         </div>
-
+        <div class="event-youtube">
+          <h2>線上參與</h2>
+          <div class="event-youtube-details">
+            <span>除了線下舉辦，</span>
+            <br>
+            <span>我們也會同步在YouTube直播</span>
+            <br>
+            <a :href="YoutubeLink" target="_blank" rel="noopener">直播(與其存檔)連結</a>
+          </div>
+        </div>
       </div>
       <iframe
           :src="googleMapsEmbedSrc"
@@ -50,6 +49,10 @@
         <p>{{ eventDescription }}</p>
       </div>
     </div>
+    <div class="group-photo div-page">
+      <h2>大合照</h2>
+      <img :src="groupPhotoSrc" alt="Group Photo" />
+    </div>
   </div>
 </template>
 
@@ -62,6 +65,7 @@ const eventDescription = `本獨立研究成果發表會旨在提倡科學研究
 const googleCalendarLink = "待加入";
 const googleMapsLink = "https://goo.gl/maps/kWBUJyyp6iXVHmib8";
 const googleMapsEmbedSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0972926964214!2d121.51011581643546!3d25.030772083973787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9483fb05b03%3A0xe2d4710b90afdf1a!2z6Ie65YyX5biC56uL5bu65ZyL6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1680545181231!5m2!1szh-TW!2stw";
+const YoutubeLink = "https://www.youtube.com/watch?v=lVkmyLT_OT8";
 </script>
 
 <style scoped lang="scss">
@@ -79,24 +83,27 @@ const googleMapsEmbedSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
 
 .event-info .time-location {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   padding: 2%;
   margin-bottom: 20px;
 }
 
 .event-info .event-time,
-.event-info .event-location {
-  margin: 10px;
+.event-info .event-location
+.event-info .event-youtube, {
+  /*甚麼都沒有~*/
 }
 
 .event-info .event-time-details a,
-.event-info .event-location-details a {
+.event-info .event-location-details a,
+.event-info .event-youtube-details a {
   color: #007bff;
 }
 
 .event-info .event-time-details a:hover,
-.event-info .event-location-details a:hover {
+.event-info .event-location-details a:hover,
+.event-info .event-youtube-details a:hover {
   text-decoration: underline;
 }
 
