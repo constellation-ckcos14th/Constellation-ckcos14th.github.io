@@ -1,7 +1,7 @@
 <template>
-  <div class="tab-page contact-pg">
+  <div class="tab-page contact-pg"  > 
     <h1>Contact Us</h1>
-    <div class="contact-methods">
+    <div class="contact-methods" style="height:65vh"> <!--加上高度讓這個頁面不會太短而導致跑版-->
       <a
         href="https://www.instagram.com/ckcos14th.constellation/"
         target="_blank"
@@ -25,7 +25,7 @@
       </a>
     </div>
 
-    <div class="team div-page">
+    <!-- <div class="team div-page">
       <h2>Developer List</h2>
       <div class="team-member-list">
         <div
@@ -43,9 +43,11 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div>
+      <router-link :to="{ name: 'Clear' }">Clear</router-link>
     </div>
-
-
   </div>
 </template>
 
