@@ -51,7 +51,7 @@ const isMobile = () => {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: overlay;
-  animation: background-flicker 7s linear infinite;
+  animation: background-flicker 6s linear infinite;
 }
 
 
@@ -75,46 +75,22 @@ const isMobile = () => {
 
 @keyframes background-flicker {
   0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.02;
+  }
+  20% {
     opacity: 0.9;
   }
-  2% {
-    opacity: 0.05;
-  }
-  3% {
-    opacity: 0.05;
-  }
-  4% {
+  79% {
     opacity: 0.9;
   }
-  41% {
-    opacity: 0.7;
-  }
-  42% {
-    opacity: 0.05;
-  }
-  44% {
-    opacity: 0.05;
-  }
-  45% {
-    opacity: 0.7;
-  }
-  65% {
-    opacity: 0.5;
-  }
-  70% {
-    opacity: 0.4;
-  }
-  72% {
-    opacity: 0.1;
-  }
-  73% {
-    opacity: 0.1;
-  }
-  74% {
-    opacity: 0.3;
+  98% {
+    opacity: 0.015;
   }
   100% {
-    opacity: 0.9;
+    opacity: 0;
   }
 }
 

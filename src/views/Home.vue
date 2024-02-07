@@ -59,7 +59,7 @@
 <script setup lang="ts">
 const groupPhotoSrc = "groupPhoto.jpg";
 const eventDate = "2024年5月20 (週一/五)";
-const eventTime = "13:00 - 17:30";
+const eventTime = "13:00 - 17:00";
 const eventLocation = "100台北市中正區南海路56號";
 const eventDescription = `IKEA很多酪梨`;
 const googleCalendarLink = "待加入";
