@@ -3,13 +3,9 @@
     <h1>About Us</h1>
     <div class="theme div-page">
       <h2>主題含意</h2>
-      <p>在知識的泡沫中沉淪</p>
-      <p>智慧的螢光向外發散</p>
-      <p>引領未來光茫的方向</p>
-      <br/>
-      <p>Luminescence：</p>
-      <p>Spontaneous emission of radiation from an electronically excited species (or from a vibrationally excited
-        species) not in thermal equilibrium with its environment.</p>
+      <p>{{abouttext}}</p>
+      <br>
+      <p>{{abouttext2}}</p>
     </div>
 
     <div class="music-mv div-page">
@@ -58,9 +54,11 @@ function toggleExpanded() {
   expanded.value = !expanded.value;
 }
 
+const abouttext = "「Constellation」中文翻譯成星座，相信大家對於這高中課內單字都相當熟悉，但如果我們回歸到這個字的本身，con-這個前綴詞源自於拉丁文，意味著一起、共同、聚集；而-stella-則有如stellar一詞般，代表著一顆一顆閃閃發亮的恆星。將兩個單元合併在一起，我們就得到了Constellation—綻放著光芒的群星。";
+const abouttext2 = "科學班走過了十四年的歲月，各個學長們都已褪去成長的外殼，成為了社會上的明日之星。而我們當然也無一不例外，自入學以來，我們各個都是一顆顆閃閃發光的恆星，大家聚在一起，有歡笑、有悲傷、有吵架、有團結，但每位同學都以自己的知識、才智、專長為燃料，焚盡自己的身心靈，在各個方面發光發熱。其中最明顯的莫過於專題研究，我們充分發揮著科學班的本業，利用科學方法，步步謹慎為營，劈拓科學尖端的新知。雖然在這條路上，我們縱一葦之所如般，有時迷茫、有時絕望，但我們依然緊繫著於心中那宛如明燈的信念，秉持著追根究柢的精神，在無垠的蒼穹中，各自成為照亮終點的那顆熠熠生輝的新星。";
+
 const title = "歌詞";
 const text = "(大合唱時，歡迎跟著唱)\n\n";
-
 
 const intro = "\n(前奏)\n\n";
 const interlude = "(間奏)\n\n";
