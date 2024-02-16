@@ -3,7 +3,7 @@
     <h1 id="title">台北市立建國高級中學</h1>
     <h1>科學班第14屆成果發表</h1>
     <div class="event-info div-page">
-      <div class="time-location">
+      <div id="qq" class="time-location">
         <div class="event-time">
           <h2>舉辦時間</h2>
           <div class="event-time-details">
@@ -21,7 +21,7 @@
           <div class="event-location-details">
             <span>{{ eventLocation }}</span>
             <br>
-            <a :href="googleMapsLink" target="_blank" rel="noopener">在Google Maps上查看</a>
+            <a :href="googleMapsLink" target="_blank" rel="noopener">在Google地圖上查看</a>
           </div>
         </div>
         <div class="event-youtube">
@@ -31,7 +31,7 @@
             <br>
             <span>我們也會同步在YouTube直播</span>
             <br>
-            <a :href="YoutubeLink" target="_blank" rel="noopener">直播(與其存檔)連結</a>
+            <a :href="YoutubeLink" target="_blank" rel="noopener">直播(與存檔)連結</a>
           </div>
         </div>
       </div>
@@ -114,9 +114,12 @@ const YoutubeLink = "https://www.youtube.com/watch?v=M3uh7cHzjYc";
   padding: 2%;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 550px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  #qq {
+    display : block;
   }
 }
 </style>
