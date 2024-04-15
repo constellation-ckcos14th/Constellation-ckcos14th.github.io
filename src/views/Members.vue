@@ -6,13 +6,6 @@
         <div class="member-position">{{ member.position }}</div>
       </li>
     </ul>
-
-    <div class="return-btn">
-      <router-link :to="{ name: 'About' }" class="link"
-      >返回
-      </router-link>
-    </div>
-
   </div>
 </template>
 
@@ -34,7 +27,6 @@ loadJSON();
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 40px 20px;
 }
 
 .members-list {
@@ -59,6 +51,7 @@ loadJSON();
   background-color: rgba(210, 210, 210, 0.9);
   font-size: 1.2em;
   font-weight: bold;
+  text-align:center;
   color: #333;
   transition: transform 0.3s ease-in-out;
 }
@@ -74,6 +67,7 @@ loadJSON();
 .member-position {
   font-size: 0.8em;
   font-style: italic;
+  margin : 5px;
   color: #666;
 }
 </style>

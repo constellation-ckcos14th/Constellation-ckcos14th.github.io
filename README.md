@@ -1,6 +1,7 @@
 # 臺北市建國高中科學班第14屆成果發表網站
 
-臺北市立建國高級中學科學班第14屆成果發表《Constellation》將於2024/5/20舉行，而這裡是網站原始碼的儲存庫。
+臺北市立建國高級中學科學班第14屆成果發表《Constellation》將於2024年5月20日舉行，而這裡是網站原始碼的儲存庫。
+Welcome to the repository for the Jianguo High School Class of Sicence class project presentation. This webpage is designed to showcase our project and provide information about the event. For more detail, please check the English version of this README file. [link](./README_EN.md)
 
 ## 訪問網站
 

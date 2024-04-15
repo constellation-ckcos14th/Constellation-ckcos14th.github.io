@@ -8,15 +8,13 @@
     <div class="column-2">
       <router-link :to="{ name: 'About' }" class="link">About</router-link>
       <router-link :to="{ name: 'Categories' }" class="link">Categories</router-link>
+      <router-link :to="{ name: 'Members' }" class="link">Members</router-link>
       <router-link :to="{ name: 'Schedule' }" class="link">Schedule</router-link>
       <router-link :to="{ name: 'Contact' }" class="link">Contact</router-link>
     </div>
 
 
     <div class="column-3">
-
-
-      <!-- <Login/> -->
 
       <div class="outer-links">
         <a
@@ -27,7 +25,7 @@
         >
       <vue-feather type="youtube" size="20"></vue-feather>
         </a>
-        <a href="https://www.instagram.com/ckcos14th.constellation/" target="_blank" rel="noopener noreferrer" class="icon">
+        <a href="https://www.instagram.com/constellation_ckcos14/" target="_blank" rel="noopener noreferrer" class="icon">
           <vue-feather type="instagram" size="20"></vue-feather>
         </a>
       </div>

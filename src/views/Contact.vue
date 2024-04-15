@@ -3,7 +3,7 @@
     <h1>Contact Us</h1>
     <div class="contact-methods" style="height:65vh"> <!--加上高度讓這個頁面不會太短而導致跑版-->
       <a
-        href="https://www.instagram.com/ckcos14th.constellation/"
+        href="https://www.instagram.com/constellation_ckcos14/"
         target="_blank"
         rel="noopener noreferrer"
       >

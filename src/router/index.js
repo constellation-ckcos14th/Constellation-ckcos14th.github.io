@@ -6,13 +6,10 @@ import Categories from "../views/Categories.vue";
 import Schedule from "../views/Schedule.vue";
 import Contact from "../views/Contact.vue";
 import Members from "../views/Members.vue";
-import Success from "../views/Success.vue";
 import ScheduleChild1 from "../views/ScheduleChild1.vue";
 import ScheduleChild2 from "../views/ScheduleChild2.vue";
-import ScheduleChild3 from "../views/ScheduleChild3.vue";
-import ScheduleChild4 from "../views/ScheduleChild4.vue";
 import Clear from "../views/Clear.vue";
-// import TestJson from "../views/TestJson.vue";
+import TestJson from "../views/TestJson.vue";
 
 const routes = [
   {
@@ -56,30 +53,15 @@ const routes = [
     component: ScheduleChild2,
   },
   {
-    path: "/day2-2F",
-    name: "Day2-2F",
-    component: ScheduleChild3,
-  },
-  {
-    path: "/day2-4F",
-    name: "Day2-4F",
-    component: ScheduleChild4,
-  },
-  {
-    path: "/success",
-    name: "Success",
-    component: Success,
-  },
-  {
     path: "/clear",
     name: "Clear",
     component: Clear,
   },
-  // {
-  //   path: "/testjson",
-  //   name: "TestJson",
-  //   component: TestJson,
-  // },
+  {
+    path: "/testjson",
+    name: "TestJson",
+    component: TestJson,
+  },
   {
     path: "/:pathMatch(.*)*",
     redirect: { name: "Home"},

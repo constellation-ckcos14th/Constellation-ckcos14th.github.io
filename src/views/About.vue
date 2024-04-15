@@ -30,16 +30,23 @@
       </div>
     </div>
 
+    
+    <div class="promotionalImage div-page">
+      <h2>宣傳圖</h2>
+      <img :src="promotionalImage" alt="Promotional Image"/>
+    </div>
+
     <div class="invitation div-page">
       <h2>邀請函</h2>
       <img :src="invitationLetter" alt="Invitation Letter"/>
     </div>
 
-    <div class="div-page">
+
+    <!-- <div class="div-page">
       <router-link :to="{ name: 'Members' }">
         <h2 class="staff-member">工作人員名單</h2>
       </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -47,6 +54,7 @@
 import {ref} from 'vue';
 
 const invitationLetter = "invitationLetter.png";
+const promotionalImage = "promotionalImage.png";
 
 const expanded = ref(false);
 
@@ -134,6 +142,16 @@ const contents = [
 }
 
 .invitation {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 0.3em;
+  }
+}
+
+.promotionalImage {
   img {
     max-width: 100%;
     height: auto;
