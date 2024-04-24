@@ -23,6 +23,7 @@ const isMobile = () => {
 </script>
 
 <style>
+
 .app {
   position: relative;
   z-index: 0;
@@ -73,9 +74,12 @@ const isMobile = () => {
   transition: all 0.3s ease-in;
 }
 
+
 @keyframes background-flicker {
+  
+  background-image: url("/dots.png");
   0% {
-    opacity: 0;
+    opacity: Math.random();
   }
   1% {
     opacity: 0.02;

@@ -40,13 +40,6 @@
       <h2>邀請函</h2>
       <img :src="invitationLetter" alt="Invitation Letter"/>
     </div>
-
-
-    <!-- <div class="div-page">
-      <router-link :to="{ name: 'Members' }">
-        <h2 class="staff-member">工作人員名單</h2>
-      </router-link>
-    </div> -->
   </div>
 </template>
 
@@ -159,10 +152,6 @@ const contents = [
     margin: 20px 0;
     border-radius: 0.3em;
   }
-}
-
-.staff-member:hover {
-  color: #007bff;
 }
 
 .infobar {
