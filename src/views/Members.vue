@@ -34,28 +34,30 @@
 
 
 <template>
-  <div class="members-container">
-    <ul class="members-list">
-      <li v-for="member in members" :key="member.id">
-        <div @click="showPopup(members_description[member.id - 1])">
-          <div class="member">
-            <div class="member-name">{{ member.name }}</div>
-            <div class="member-position">{{ member.position }} </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  
-  <div v-if="popupVisible" class="popup">
-      <div class="popup__title">
-          <h2 class="no-top-bottom-margin">{{ selectedWork.name }}</h2>
-          <button class="close-btn" @click="hidePopup" title="按Esc也可以關掉喔">🞫</button>
+    <div> <!--不包一層會死掉，按其他葉面會全黑，https://ithelp.ithome.com.tw/articles/10219050-->
+      <div class="members-container">
+        <ul class="members-list">
+          <li v-for="member in members" :key="member.id">
+            <div @click="showPopup(members_description[member.id - 1])">
+              <div class="member">
+                <div class="member-name">{{ member.name }}</div>
+                <div class="member-position">{{ member.position }} </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="popup__content">
-        <!-- <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'"> -->
-        <p class="popup__description">{{ selectedWork.description }}</p>
+
+      
+      <div v-if="popupVisible" class="popup">
+          <div class="popup__title">
+              <h2 class="no-top-bottom-margin">{{ selectedWork.name }}</h2>
+              <button class="close-btn" @click="hidePopup" title="按Esc也可以關掉喔">🞫</button>
+          </div>
+          <div class="popup__content">
+            <!-- <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'"> -->
+            <p class="popup__description">{{ selectedWork.description }}</p>
+          </div>
       </div>
   </div>
 </template>
@@ -151,11 +153,12 @@ a:hover{ color: rgb(0, 144, 216); }
 }
 
 .popup__content {
-  padding-top: 30px;
+  padding: 2vh;
   max-height: 70vh;
   overflow-y: auto;
   text-align: left;
-  white-space: pre-line;
+  white-space:pre;
+  word-break: break-all;
 }
 
 .works-photo {

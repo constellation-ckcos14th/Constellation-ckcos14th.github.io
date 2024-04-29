@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "vite build && cp dist/index.html dist/404.html && echo 'copying index.html to 404.html (important, do not remove)' && gh-pages -d dist -b gh-pages",
     "deploy2": "vite build && cp dist/index.html dist/404.html && gh-pages -r git@github.com:ckmsc39th/ckmsc39th.github.io.git -d dist -b gh-pages"
   },
@@ -34,7 +34,7 @@
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
     "sass": "^1.62.1",
-    "sass-loader": "^13.3.0",
+    "sass-loader": "^13.3.3",
     "tailwindcss": "^3.3.1",
     "vite": "^4.1.0",
     "vue-router": "^4.1.6"

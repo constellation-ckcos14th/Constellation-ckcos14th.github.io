@@ -1,7 +1,7 @@
 [
   { "id": 1, "name": "王以安", "position": "鄭宇宏" },
   { "id": 2, "name": "王品硯", "position": "攝影" },
-  { "id": 3, "name": "朱秝辰", "position": "文宣組長" },
+  { "id": 3, "name": "朱秝辰", "position": "公關、文宣組長" },
   { "id": 4, "name": "吳柏曜", "position": "網管" },
   { "id": 5, "name": "宋秉倫", "position": "文案" },
   { "id": 6, "name": "李佳承", "position": "美術、成發曲人聲" },
@@ -19,7 +19,7 @@
   { "id": 18, "name": "陳宥潾", "position": "主持人(二樓)、文案、導演、編劇、填詞" },
   { "id": 19, "name": "陳韋達", "position": "文宣總務" },
   { "id": 20, "name": "彭可翰", "position": "主持人(二樓)" },
-  { "id": 21, "name": "曾宥鈞", "position": "演員" },
+  { "id": 21, "name": "曾宥鈞", "position": "公關長、演員" },
   { "id": 22, "name": "黃羶宇", "position": "場控、影片剪輯" },
   { "id": 23, "name": "楊爵禧", "position": "機動" },
   { "id": 24, "name": "蕭宇鴻", "position": "編曲" },

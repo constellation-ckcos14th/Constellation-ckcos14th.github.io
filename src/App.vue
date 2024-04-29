@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" @animationiteration="change_background"> 
     <div class="navbar">
       <navbar></navbar>
         <router-view v-slot="{ Component }">
@@ -22,8 +22,31 @@ const isMobile = () => {
 };
 </script>
 
-<style>
 
+<script>
+  function getRandom(min,max){
+    return Math.floor(Math.random()*max)+min;
+  };
+  function change_background() {
+    var nnn = getRandom(0,88)
+    var qq = "url(background/";
+    var newbackground = qq.concat(nnn).concat(".png)");
+    console.log(nnn);
+    var appselector = document.querySelector(".app");
+    if (appselector != null) {
+      // console.log(document.styleSheets[1]);
+      console.log(document.styleSheets[1].cssRules[1].style.backgroundImage);
+      document.styleSheets[1].cssRules[1].style.backgroundImage = newbackground;
+      console.log("nice boat");
+    } 
+    else {
+      console.log("bad boat\n");
+    }
+  }
+</script>
+
+
+<style>
 .app {
   position: relative;
   z-index: 0;
@@ -47,12 +70,12 @@ const isMobile = () => {
   left: 0;
   right: 0;
   opacity: 0.9;
-  background-image: url("/dots.png");
+  background-image: url("/background/1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: overlay;
-  animation: background-flicker 6s linear infinite;
+  animation: background-flicker 5s linear infinite;
 }
 
 
@@ -76,10 +99,8 @@ const isMobile = () => {
 
 
 @keyframes background-flicker {
-  
-  background-image: url("/dots.png");
   0% {
-    opacity: Math.random();
+    opacity: 0;
   }
   1% {
     opacity: 0.02;
