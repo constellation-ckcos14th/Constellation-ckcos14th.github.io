@@ -42,7 +42,7 @@
         <div class="flex justify-evenly">
           <a
               class="mobile-icon"
-              href="https://www.youtube.com/@ckmsc39th_luminescence"
+              href="https://www.youtube.com/@constellation-ckcos14th"
               rel="noopener noreferrer"
               target="_blank"
           >

@@ -9,7 +9,6 @@ import Members from "../views/Members.vue";
 import ScheduleChild1 from "../views/ScheduleChild1.vue";
 import ScheduleChild2 from "../views/ScheduleChild2.vue";
 import Clear from "../views/Clear.vue";
-import TestJson from "../views/TestJson.vue";
 
 const routes = [
   {
@@ -56,11 +55,6 @@ const routes = [
     path: "/clear",
     name: "Clear",
     component: Clear,
-  },
-  {
-    path: "/testjson",
-    name: "TestJson",
-    component: TestJson,
   },
   {
     path: "/:pathMatch(.*)*",

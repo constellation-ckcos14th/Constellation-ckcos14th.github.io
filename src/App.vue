@@ -1,5 +1,5 @@
 <template>
-  <div class="app" @animationiteration="change_background"> 
+  <div ref="appqq" class="app" @animationiteration="change_background"> 
     <div class="navbar">
       <navbar></navbar>
         <router-view v-slot="{ Component }">
@@ -20,29 +20,33 @@ const isMobile = () => {
     /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
   );
 };
+
 </script>
 
 
 <script>
+  export default {
+    methods: {
+      change_background()  {
+        var nnn = getRandom(0,88.999)
+        var qq = "url(background/";
+        var newbackground = qq.concat(nnn).concat(".png)");
+        console.log(nnn);
+        const appselector = this.$refs.appqq;
+        appselector.style.setProperty('--after-background-image', newbackground);
+        return -1;
+      }
+    },
+    mounted() {
+      console.log("meow\n");
+      const element = this.$refs.appqq;
+      console.log(element);
+      this.change_background();
+    }
+  };
   function getRandom(min,max){
     return Math.floor(Math.random()*max)+min;
   };
-  function change_background() {
-    var nnn = getRandom(0,88)
-    var qq = "url(background/";
-    var newbackground = qq.concat(nnn).concat(".png)");
-    console.log(nnn);
-    var appselector = document.querySelector(".app");
-    if (appselector != null) {
-      // console.log(document.styleSheets[1]);
-      console.log(document.styleSheets[1].cssRules[1].style.backgroundImage);
-      document.styleSheets[1].cssRules[1].style.backgroundImage = newbackground;
-      console.log("nice boat");
-    } 
-    else {
-      console.log("bad boat\n");
-    }
-  }
 </script>
 
 
@@ -70,12 +74,12 @@ const isMobile = () => {
   left: 0;
   right: 0;
   opacity: 0.9;
-  background-image: url("/background/1.png");
+  background-image: var(--after-background-image, url("/background/77.png"));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: overlay;
-  animation: background-flicker 5s linear infinite;
+  animation: background-flicker 8.8s linear infinite;
 }
 
 
@@ -102,16 +106,16 @@ const isMobile = () => {
   0% {
     opacity: 0;
   }
-  1% {
-    opacity: 0.02;
+  2% {
+    opacity: 0.03;
   }
-  20% {
+  16% {
     opacity: 0.9;
   }
-  79% {
+  83% {
     opacity: 0.9;
   }
-  98% {
+  96% {
     opacity: 0.015;
   }
   100% {
