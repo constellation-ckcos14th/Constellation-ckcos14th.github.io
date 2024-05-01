@@ -1,7 +1,7 @@
 [
-  { "id": 1, "name": "王以安", "position": "鄭宇宏" },
+  { "id": 1, "name": "王以安", "position": "網站" },
   { "id": 2, "name": "王品硯", "position": "攝影" },
-  { "id": 3, "name": "朱秝辰", "position": "公關、文宣組長" },
+  { "id": 3, "name": "朱秝辰", "position": "文宣組長" },
   { "id": 4, "name": "吳柏曜", "position": "網管" },
   { "id": 5, "name": "宋秉倫", "position": "文案" },
   { "id": 6, "name": "李佳承", "position": "美術、成發曲人聲" },
@@ -13,7 +13,7 @@
   { "id": 12, "name": "林庭宇", "position": "演員、成發曲人聲" },
   { "id": 13, "name": "林竣宇", "position": "編曲、成發曲人聲" },
   { "id": 14, "name": "邱威翔", "position": "總召、影片剪輯、成發曲人聲" },
-  { "id": 15, "name": "施竣耀", "position": "希臘化時代的埃及數學家" },
+  { "id": 15, "name": "施竣耀", "position": "希臘化時代埃及數學家" },
   { "id": 16, "name": "祝楷棣", "position": "海報" },
   { "id": 17, "name": "陳芃聿", "position": "機動" },
   { "id": 18, "name": "陳宥潾", "position": "主持人(二樓)、文案、導演、編劇、填詞" },

@@ -81,14 +81,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in math" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group)" class="touch title" ref="wrap">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -103,12 +101,12 @@
             <div class="popup__author">
               <h4 class="no-top-bottom-margin">{{ selectedWork.author }}</h4>
             </div>
-
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img"   class="works-photo"   :alt="'/works/'+img">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
-            
           </div>
         </div>
       </div>
@@ -154,14 +152,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in physics" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group) " class="touch title">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -176,12 +172,12 @@
             <div class="popup__author">
               <h4 class="no-top-bottom-margin">{{ selectedWork.author }}</h4>
             </div>
-
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img"   class="works-photo"   :alt="'/works/'+img">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -215,14 +211,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in chemistry" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group)" class="touch title">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -237,12 +231,12 @@
             <div class="popup__author">
               <h4 class="no-top-bottom-margin">{{ selectedWork.author }}</h4>
             </div>
-
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img"   class="works-photo"   :alt="'/works/'+img">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -287,14 +281,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in biology" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group)" class="touch title">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -311,7 +303,9 @@
             </div>
 
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
 
@@ -339,14 +333,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in earth" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group)" class="touch title">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -361,12 +353,12 @@
             <div class="popup__author">
               <h4 class="no-top-bottom-margin">{{ selectedWork.author }}</h4>
             </div>
-            
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img"   class="works-photo"   :alt="'/works/'+img">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -394,14 +386,12 @@
           <table>
             <thead>
             <tr>
-              <th>Index</th>
               <th>Title</th>
               <th>Authors</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="group in infor" :key="group.id">
-                <td>{{ group.mark }}</td>
                 <td @click="showPopup(group)" class="touch title">{{ group.title }}</td>
                 <td>{{ group.author }}</td>
             </tr>
@@ -416,12 +406,12 @@
             <div class="popup__author">
               <h4 class="no-top-bottom-margin">{{ selectedWork.author }}</h4>
             </div>
-
             <div class="popup__content">
-              <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'">
+              <div v-for="img in selectedWork.images" :key="img.id">
+                <img :src="'/works/'+img"   class="works-photo"   :alt="'/works/'+img">
+              </div>
               <p class="popup__description">{{ selectedWork.description }}</p>
             </div>
-
           </div>
         </div>
       
@@ -468,6 +458,8 @@ a:hover{ color: rgb(0, 144, 216); }
   align-items: center;
   justify-content: center;
   animation: fade-in-animation ease-in 0.2s;
+  //white-space:pre-wrap;
+  //word-break: break-all;
 }
 
 .popup__title {
