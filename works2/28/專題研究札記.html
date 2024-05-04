@@ -1,0 +1,904 @@
+<!DOCTYPE html> <html><head>
+		<title>專題研究札記</title>
+		<base href="./">
+		<meta id="root-path" root-path="./">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Granary - 專題研究札記">
+		<meta property="og:title" content="專題研究札記">
+		<meta property="og:description" content="Granary - 專題研究札記">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="專題研究札記.html">
+		<meta property="og:image" content="https://i.imgur.com/FDA02VE.png">
+		<meta property="og:site_name" content="Granary">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles">mjx-c.mjx-c1D443.TEX-I::before { padding: 0.683em 0.751em 0px 0px; content: "P"; }
+mjx-c.mjx-c1D459.TEX-I::before { padding: 0.694em 0.298em 0.011em 0px; content: "l"; }
+mjx-c.mjx-c1D44E.TEX-I::before { padding: 0.441em 0.529em 0.01em 0px; content: "a"; }
+mjx-c.mjx-c1D450.TEX-I::before { padding: 0.442em 0.433em 0.011em 0px; content: "c"; }
+mjx-c.mjx-c1D452.TEX-I::before { padding: 0.442em 0.466em 0.011em 0px; content: "e"; }
+mjx-c.mjx-c210E.TEX-I::before { padding: 0.694em 0.576em 0.011em 0px; content: "h"; }
+mjx-c.mjx-c1D45C.TEX-I::before { padding: 0.441em 0.485em 0.011em 0px; content: "o"; }
+mjx-c.mjx-c1D451.TEX-I::before { padding: 0.694em 0.52em 0.01em 0px; content: "d"; }
+mjx-c.mjx-c1D45F.TEX-I::before { padding: 0.442em 0.451em 0.011em 0px; content: "r"; }
+mjx-c.mjx-c1D446.TEX-I::before { padding: 0.705em 0.645em 0.022em 0px; content: "S"; }
+mjx-c.mjx-c1D447.TEX-I::before { padding: 0.677em 0.704em 0px 0px; content: "T"; }
+mjx-c.mjx-c1D461.TEX-I::before { padding: 0.626em 0.361em 0.011em 0px; content: "t"; }
+mjx-msup { display: inline-block; text-align: left; }
+mjx-texatom { display: inline-block; text-align: left; }
+mjx-mo { display: inline-block; text-align: left; }
+mjx-stretchy-h { display: inline-table; width: 100%; }
+mjx-stretchy-h > * { display: table-cell; width: 0px; }
+mjx-stretchy-h > * > mjx-c { display: inline-block; transform: scaleX(1); }
+mjx-stretchy-h > * > mjx-c::before { display: inline-block; width: initial; }
+mjx-stretchy-h > mjx-ext { overflow: clip visible; width: 100%; }
+mjx-stretchy-h > mjx-ext > mjx-c::before { transform: scaleX(500); }
+mjx-stretchy-h > mjx-ext > mjx-c { width: 0px; }
+mjx-stretchy-h > mjx-beg > mjx-c { margin-right: -0.1em; }
+mjx-stretchy-h > mjx-end > mjx-c { margin-left: -0.1em; }
+mjx-stretchy-v { display: inline-block; }
+mjx-stretchy-v > * { display: block; }
+mjx-stretchy-v > mjx-beg { height: 0px; }
+mjx-stretchy-v > mjx-end > mjx-c { display: block; }
+mjx-stretchy-v > * > mjx-c { transform: scaleY(1); transform-origin: left center; overflow: hidden; }
+mjx-stretchy-v > mjx-ext { display: block; height: 100%; box-sizing: border-box; border: 0px solid transparent; overflow: visible clip; }
+mjx-stretchy-v > mjx-ext > mjx-c::before { width: initial; box-sizing: border-box; }
+mjx-stretchy-v > mjx-ext > mjx-c { transform: scaleY(500) translateY(0.075em); overflow: visible; }
+mjx-mark { display: inline-block; height: 0px; }
+mjx-c.mjx-c5B::before { padding: 0.75em 0.278em 0.25em 0px; content: "["; }
+mjx-c.mjx-c5D::before { padding: 0.75em 0.278em 0.25em 0px; content: "]"; }
+mjx-msub { display: inline-block; text-align: left; }
+mjx-mn { display: inline-block; text-align: left; }
+mjx-c.mjx-c1D436.TEX-I::before { padding: 0.705em 0.76em 0.022em 0px; content: "C"; }
+mjx-c.mjx-c1D442.TEX-I::before { padding: 0.704em 0.763em 0.022em 0px; content: "O"; }
+mjx-c.mjx-c32::before { padding: 0.666em 0.5em 0px 0px; content: "2"; }
+mjx-container[jax="CHTML"] { line-height: 0; }
+mjx-container [space="1"] { margin-left: 0.111em; }
+mjx-container [space="2"] { margin-left: 0.167em; }
+mjx-container [space="3"] { margin-left: 0.222em; }
+mjx-container [space="4"] { margin-left: 0.278em; }
+mjx-container [space="5"] { margin-left: 0.333em; }
+mjx-container [rspace="1"] { margin-right: 0.111em; }
+mjx-container [rspace="2"] { margin-right: 0.167em; }
+mjx-container [rspace="3"] { margin-right: 0.222em; }
+mjx-container [rspace="4"] { margin-right: 0.278em; }
+mjx-container [rspace="5"] { margin-right: 0.333em; }
+mjx-container [size="s"] { font-size: 70.7%; }
+mjx-container [size="ss"] { font-size: 50%; }
+mjx-container [size="Tn"] { font-size: 60%; }
+mjx-container [size="sm"] { font-size: 85%; }
+mjx-container [size="lg"] { font-size: 120%; }
+mjx-container [size="Lg"] { font-size: 144%; }
+mjx-container [size="LG"] { font-size: 173%; }
+mjx-container [size="hg"] { font-size: 207%; }
+mjx-container [size="HG"] { font-size: 249%; }
+mjx-container [width="full"] { width: 100%; }
+mjx-box { display: inline-block; }
+mjx-block { display: block; }
+mjx-itable { display: inline-table; }
+mjx-row { display: table-row; }
+mjx-row > * { display: table-cell; }
+mjx-mtext { display: inline-block; }
+mjx-mstyle { display: inline-block; }
+mjx-merror { display: inline-block; color: red; background-color: yellow; }
+mjx-mphantom { visibility: hidden; }
+mjx-assistive-mml { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); user-select: none; position: absolute !important; padding: 1px 0px 0px !important; border: 0px !important; display: block !important; width: auto !important; overflow: hidden !important; }
+mjx-assistive-mml[display="block"] { width: 100% !important; }
+mjx-math { display: inline-block; text-align: left; line-height: 0; text-indent: 0px; font-style: normal; font-weight: normal; font-size: 100%; letter-spacing: normal; border-collapse: collapse; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; direction: ltr; padding: 1px 0px; }
+mjx-container[jax="CHTML"][display="true"] { display: block; text-align: center; margin: 1em 0px; }
+mjx-container[jax="CHTML"][display="true"][width="full"] { display: flex; }
+mjx-container[jax="CHTML"][display="true"] mjx-math { padding: 0px; }
+mjx-container[jax="CHTML"][justify="left"] { text-align: left; }
+mjx-container[jax="CHTML"][justify="right"] { text-align: right; }
+mjx-mi { display: inline-block; text-align: left; }
+mjx-c { display: inline-block; }
+mjx-utext { display: inline-block; padding: 0.75em 0px 0.2em; }
+mjx-c::before { display: block; width: 0px; }
+.MJX-TEX { font-family: MJXZERO, MJXTEX; }
+.TEX-B { font-family: MJXZERO, MJXTEX-B; }
+.TEX-I { font-family: MJXZERO, MJXTEX-I; }
+.TEX-MI { font-family: MJXZERO, MJXTEX-MI; }
+.TEX-BI { font-family: MJXZERO, MJXTEX-BI; }
+.TEX-S1 { font-family: MJXZERO, MJXTEX-S1; }
+.TEX-S2 { font-family: MJXZERO, MJXTEX-S2; }
+.TEX-S3 { font-family: MJXZERO, MJXTEX-S3; }
+.TEX-S4 { font-family: MJXZERO, MJXTEX-S4; }
+.TEX-A { font-family: MJXZERO, MJXTEX-A; }
+.TEX-C { font-family: MJXZERO, MJXTEX-C; }
+.TEX-CB { font-family: MJXZERO, MJXTEX-CB; }
+.TEX-FR { font-family: MJXZERO, MJXTEX-FR; }
+.TEX-FRB { font-family: MJXZERO, MJXTEX-FRB; }
+.TEX-SS { font-family: MJXZERO, MJXTEX-SS; }
+.TEX-SSB { font-family: MJXZERO, MJXTEX-SSB; }
+.TEX-SSI { font-family: MJXZERO, MJXTEX-SSI; }
+.TEX-SC { font-family: MJXZERO, MJXTEX-SC; }
+.TEX-T { font-family: MJXZERO, MJXTEX-T; }
+.TEX-V { font-family: MJXZERO, MJXTEX-V; }
+.TEX-VB { font-family: MJXZERO, MJXTEX-VB; }
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c { font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A !important; }
+@font-face { font-family: MJXZERO; src: url("lib/fonts/mathjax_zero.woff") format("woff"); }
+@font-face { font-family: MJXTEX; src: url("lib/fonts/mathjax_main-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-B; src: url("lib/fonts/mathjax_main-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-I; src: url("lib/fonts/mathjax_math-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-MI; src: url("lib/fonts/mathjax_main-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-BI; src: url("lib/fonts/mathjax_math-bolditalic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S1; src: url("lib/fonts/mathjax_size1-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S2; src: url("lib/fonts/mathjax_size2-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S3; src: url("lib/fonts/mathjax_size3-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S4; src: url("lib/fonts/mathjax_size4-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-A; src: url("lib/fonts/mathjax_ams-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-C; src: url("lib/fonts/mathjax_calligraphic-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-CB; src: url("lib/fonts/mathjax_calligraphic-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-FR; src: url("lib/fonts/mathjax_fraktur-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-FRB; src: url("lib/fonts/mathjax_fraktur-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SS; src: url("lib/fonts/mathjax_sansserif-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SSB; src: url("lib/fonts/mathjax_sansserif-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SSI; src: url("lib/fonts/mathjax_sansserif-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SC; src: url("lib/fonts/mathjax_script-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-T; src: url("lib/fonts/mathjax_typewriter-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-V; src: url("lib/fonts/mathjax_vector-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-VB; src: url("lib/fonts/mathjax_vector-bold.woff") format("woff"); }
+mjx-c.mjx-c1D70B.TEX-I::before { padding: 0.431em 0.57em 0.011em 0px; content: "π"; }
+mjx-c.mjx-c1D70E.TEX-I::before { padding: 0.431em 0.571em 0.011em 0px; content: "σ"; }
+</style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="專題研究札記"><p>專題研究札記</p></h1><div><p><a href="?query=tag:main" class="tag" target="_blank" rel="noopener">#main</a> <a href="?query=tag:ck" class="tag" target="_blank" rel="noopener">#ck</a><br>
+<a data-tooltip-position="top" aria-label="https://drive.google.com/drive/u/4/folders/1EVnFwFQPi40JEq1_j4mV-VJHP5Hq7sYU" rel="noopener" class="external-link" href="https://drive.google.com/drive/u/4/folders/1EVnFwFQPi40JEq1_j4mV-VJHP5Hq7sYU" target="_blank">Google 雲端硬碟</a></p></div><div class="heading-wrapper"><h2 data-heading="問題" class="heading" id="問題"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>問題</h2><div class="heading-children"><div><ul>
+<li data-line="0">大屯火山地區地溫觀測資料中的SN代表什麼</li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20230904" class="heading" id="20230904"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20230904</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="目標" class="heading" id="目標"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>目標</h3><div class="heading-children"><div><ul class="contains-task-list">
+<li data-line="0" data-task="x" class="task-list-item is-checked"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><input data-line="0" checked="" type="checkbox" class="task-list-item-checkbox">火山型地震的定義
+<ul>
+<li data-line="1"><a data-tooltip-position="top" aria-label="https://zh.wikipedia.org/zh-tw/%E7%81%AB%E5%B1%B1%E6%80%A7%E5%9C%B0%E9%9C%87" rel="noopener" class="external-link" href="https://zh.wikipedia.org/zh-tw/%E7%81%AB%E5%B1%B1%E6%80%A7%E5%9C%B0%E9%9C%87" target="_blank">火山性地震 - 維基百科，自由的百科全書</a></li>
+</ul>
+</li>
+<li data-line="2" data-task="x" class="task-list-item is-checked"><input data-line="2" checked="" type="checkbox" class="task-list-item-checkbox">讀雲端硬碟的資料</li>
+<li data-line="3" data-task="x" class="task-list-item is-checked"><input data-line="3" checked="" type="checkbox" class="task-list-item-checkbox">看各個網站的資料狀態，不行再找博士</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="研究階段?" class="heading" id="研究階段?"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>研究階段?</h3><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>第一階段
+<ul>
+<li data-line="1">日/月/季/年變化</li>
+</ul>
+</li>
+<li data-line="2"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>第二階段
+<ul>
+<li data-line="3">比對國外模型</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="筆記" class="heading" id="筆記"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>筆記</h3><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>火山型地震
+<ul>
+<li data-line="1">定義</li>
+</ul>
+</li>
+<li data-line="2"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>林正洪 (忙)
+<ul>
+<li data-line="3">地調所</li>
+<li data-line="4">氣象局</li>
+</ul>
+</li>
+<li data-line="5"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>資料
+<ul>
+<li data-line="6">民生公共物聯網 (少?)</li>
+<li data-line="7">Datastation.org</li>
+<li data-line="8">政府資料開放平台</li>
+<li data-line="9">pride政策</li>
+<li data-line="10">中央地調所</li>
+<li data-line="11">大屯火山監測站</li>
+<li data-line="12"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>tvo.ncree.narl.org.tw
+<ul>
+<li data-line="13">爬資料?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="14">空品指數</li>
+<li data-line="15"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>背景值
+<ul>
+<li data-line="16">設想</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="連結與資料們" class="heading" id="連結與資料們"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>連結與資料們</h3><div class="heading-children"><div><p><a data-tooltip-position="top" aria-label="https://drive.google.com/drive/folders/19ph0bASURWNHB47f2e-1RRBZglmrnc5u" rel="noopener" class="external-link" href="https://drive.google.com/drive/folders/19ph0bASURWNHB47f2e-1RRBZglmrnc5u" target="_blank">大屯火山群地質觀察與探究暑期科學營 - Google 雲端硬碟</a><br>
+<a data-tooltip-position="top" aria-label="https://tvo.ncree.narl.org.tw/decrypt/live" rel="noopener" class="external-link" href="https://tvo.ncree.narl.org.tw/decrypt/live" target="_blank">大屯火山觀測站TVO - 即時數據</a><br>
+<a data-tooltip-position="top" aria-label="https://ci.taiwan.gov.tw/dsp/Views/dataset/detail.aspx?id=air_9" rel="noopener" class="external-link" href="https://ci.taiwan.gov.tw/dsp/Views/dataset/detail.aspx?id=air_9" target="_blank">【大屯火山群小油坑空品感測器】民生公共物聯網-資料服務平台</a><br>
+<a data-tooltip-position="top" aria-label="https://www.cwb.gov.tw/V8/C/D/DailyPrecipitation.html" rel="noopener" class="external-link" href="https://www.cwb.gov.tw/V8/C/D/DailyPrecipitation.html" target="_blank">每日雨量 | 交通部中央氣象局</a><br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/77879" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/77879" target="_blank">大屯火山地區火山氣體採樣分析點位資料 | 政府資料開放平臺</a><br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/77878" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/77878" target="_blank">大屯火山地區溫泉採樣分析點位資料 | 政府資料開放平臺</a><br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16798" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16798" target="_blank">大屯火山地區地溫觀測資料 | 政府資料開放平臺</a> *4<br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16797" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16797" target="_blank">大屯火山地區火山氣體連續觀測資料 | 政府資料開放平臺</a><br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16796" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16796" target="_blank">大屯火山地區火山氣體分析資料 | 政府資料開放平臺</a> *20<br>
+<del><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7603" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7603" target="_blank">國家科學及技術委員會大屯火山觀測站_地殼變形監測 | 政府資料開放平臺</a></del><br>
+<strong><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7601" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7601" target="_blank">國家科學及技術委員會大屯火山觀測站_火山氣體監測 | 政府資料開放平臺</a></strong><br>
+<strong><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7602" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7602" target="_blank">國家科學及技術委員會大屯火山觀測站_地表溫度監測 | 政府資料開放平臺</a></strong><br>
+<a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7604" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7604" target="_blank">國家科學及技術委員會大屯火山觀測站_地震活動監測 | 政府資料開放平臺</a></p></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20230911" class="heading" id="20230911"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20230911</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="目標" class="heading" id="目標"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>目標</h3><div class="heading-children"><div><ul class="contains-task-list">
+<li data-line="0" data-task="x" class="task-list-item is-checked"><input data-line="0" checked="" type="checkbox" class="task-list-item-checkbox">資料來源一致與否</li>
+<li data-line="1" data-task="x" class="task-list-item is-checked"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><input data-line="1" checked="" type="checkbox" class="task-list-item-checkbox">火山氣體、土壤溫度逐時圖
+<ul class="contains-task-list">
+<li data-line="2" data-task="x" class="task-list-item is-checked"><input data-line="2" checked="" type="checkbox" class="task-list-item-checkbox">交叉比對</li>
+</ul>
+</li>
+<li data-line="3" data-task="x" class="task-list-item is-checked"><input data-line="3" checked="" type="checkbox" class="task-list-item-checkbox">背景值：大氣溫度</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="筆記" class="heading" id="筆記"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>筆記</h3><div class="heading-children"><div><ul>
+<li data-line="0">轉換成通量之必要性</li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>土壤溫度與逸氣通量成一正相關性
+<ul>
+<li data-line="2"><a data-tooltip-position="top" aria-label="https://np.cpami.gov.tw/%E5%85%AC%E5%9C%92%E5%B0%88%E6%AC%84/%E6%84%9B%E6%88%80%E5%85%AC%E5%9C%92%E8%AA%8C/3907-2010-12-28-06-39-39.html" rel="noopener" class="external-link" href="https://np.cpami.gov.tw/%E5%85%AC%E5%9C%92%E5%B0%88%E6%AC%84/%E6%84%9B%E6%88%80%E5%85%AC%E5%9C%92%E8%AA%8C/3907-2010-12-28-06-39-39.html" target="_blank">沉睡的火山—大屯火山群環境監測 | 臺灣國家公園</a></li>
+</ul>
+</li>
+<li data-line="3"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16797" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16797" target="_blank">大屯火山地區火山氣體連續觀測資料 | 政府資料開放平臺</a>
+<ul>
+<li data-line="4">50000筆資料、逐小時、<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math></mjx-container></span>通量</li>
+</ul>
+</li>
+<li data-line="5"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16796" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16796" target="_blank">大屯火山地區火山氣體分析資料 | 政府資料開放平臺</a> *20
+<ul>
+<li data-line="6">分測站，大約50*20筆</li>
+<li data-line="7">有土壤溫度、Ar、N2、CO、CH4、C2H6、C3H8、He、H2、O2、H2S、SO2、Stotal、HCl、CO2、H2O</li>
+<li data-line="8">相對完整T、Ar、N2、CH4、C2H6、H2、O2、Stotal、HCl、CO2、H2O</li>
+</ul>
+</li>
+<li data-line="9"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/77879" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/77879" target="_blank">大屯火山地區火山氣體採樣分析點位資料 | 政府資料開放平臺</a>
+<ul>
+<li data-line="10">沒用 (指著我跟它)</li>
+</ul>
+</li>
+<li data-line="11"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7601" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7601" target="_blank">國家科學及技術委員會大屯火山觀測站_火山氣體監測 | 政府資料開放平臺</a>
+<ul>
+<li data-line="12">1800筆資料、逐雙小時、<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math></mjx-container></span>濃度/氣溫/濕度</li>
+</ul>
+</li>
+<li data-line="13"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/77879" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/77879" target="_blank">大屯火山地區火山氣體採樣分析點位資料 | 政府資料開放平臺</a>
+<ul>
+<li data-line="14">沒用 (空間分析)</li>
+</ul>
+</li>
+<li data-line="15"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/77878" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/77878" target="_blank">大屯火山地區溫泉採樣分析點位資料 | 政府資料開放平臺</a>
+<ul>
+<li data-line="16">沒用 (空間分析)</li>
+</ul>
+</li>
+<li data-line="17"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/16798" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/16798" target="_blank">大屯火山地區地溫觀測資料 | 政府資料開放平臺</a> *4
+<ul>
+<li data-line="18">35000*4筆資料、逐小時、深度很深</li>
+</ul>
+</li>
+<li data-line="19"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7603" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7603" target="_blank">國家科學及技術委員會大屯火山觀測站_地殼變形監測 | 政府資料開放平臺</a>
+<ul>
+<li data-line="20">1900筆資料、逐雙小時、傾斜</li>
+</ul>
+</li>
+<li data-line="21"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7602" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7602" target="_blank">國家科學及技術委員會大屯火山觀測站_地表溫度監測 | 政府資料開放平臺</a>
+<ul>
+<li data-line="22">1800筆資料、逐雙小時、土表溫度</li>
+</ul>
+</li>
+<li data-line="23"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://data.gov.tw/dataset/7604" rel="noopener" class="external-link" href="https://data.gov.tw/dataset/7604" target="_blank">國家科學及技術委員會大屯火山觀測站_地震活動監測 | 政府資料開放平臺</a>
+<ul>
+<li data-line="24">1900筆資料、逐日、地震數量</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="參資" class="heading" id="參資"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>參資</h3><div class="heading-children"><div><ul>
+<li data-line="0"><a data-tooltip-position="top" aria-label="https://np.cpami.gov.tw/%E5%85%AC%E5%9C%92%E5%B0%88%E6%AC%84/%E6%84%9B%E6%88%80%E5%85%AC%E5%9C%92%E8%AA%8C/3907-2010-12-28-06-39-39.html" rel="noopener" class="external-link" href="https://np.cpami.gov.tw/%E5%85%AC%E5%9C%92%E5%B0%88%E6%AC%84/%E6%84%9B%E6%88%80%E5%85%AC%E5%9C%92%E8%AA%8C/3907-2010-12-28-06-39-39.html" target="_blank">沉睡的火山—大屯火山群環境監測 | 臺灣國家公園</a></li>
+<li data-line="1"><a data-tooltip-position="top" aria-label="https://www.ecologica.cn/html/2021/7/stxb201911102370.htm" rel="noopener" class="external-link" href="https://www.ecologica.cn/html/2021/7/stxb201911102370.htm" target="_blank">喀斯特地区土壤温度变化特征及其与环境因子的关系</a></li>
+<li data-line="2"><a data-tooltip-position="top" aria-label="https://bloggerkevinyu.blogspot.com/2017/11/FFTwithExcel.html" rel="noopener" class="external-link" href="https://bloggerkevinyu.blogspot.com/2017/11/FFTwithExcel.html" target="_blank">Kevin Yu's Blog: 使用Excel進行快速傅立葉轉換</a>
+<blockquote>
+<p>我是笨蛋</p>
+</blockquote>
+</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20230923" class="heading" id="20230923"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20230923</h2><div class="heading-children"><div><ul>
+<li data-line="0"><a data-tooltip-position="top" aria-label="https://twgeoref.moeacgs.gov.tw/GipOpenWeb/wSite/ct?xItem=226357&amp;ctNode=1200&amp;mp=6" rel="noopener" class="external-link" href="https://twgeoref.moeacgs.gov.tw/GipOpenWeb/wSite/ct?xItem=226357&amp;ctNode=1200&amp;mp=6" target="_blank">臺灣地質知識服務網-Geological Knowledge-臺灣北部火山活動觀測研究精進計畫－臺灣北部火山地區地震與地球化學監測第二期(2/2)</a></li>
+<li data-line="1"><a data-tooltip-position="top" aria-label="https://www.grb.gov.tw/search/planDetail?id=12854986" rel="noopener" class="external-link" href="https://www.grb.gov.tw/search/planDetail?id=12854986" target="_blank">北台灣火山觀測與防災應用</a>
+<blockquote>
+<p>通常在半夜時氡氣濃度、二氧化碳濃度和溫度都降至最低，相對的在午時前後濃度跟溫度升至最高，這三者呈現明顯的正相關性</p>
+</blockquote>
+</li>
+<li data-line="3"><a data-tooltip-position="top" aria-label="https://scidm.nchc.org.tw/dataset/best_wish16798" rel="noopener" class="external-link" href="https://scidm.nchc.org.tw/dataset/best_wish16798" target="_blank">大屯火山地區地溫觀測資料 - 資料集 - 國網中心資料集平台</a></li>
+<li data-line="4"><a data-tooltip-position="top" aria-label="https://twgeoref.moeacgs.gov.tw/GipOpenWeb/wSite/mp?mp=6" rel="noopener" class="external-link" href="https://twgeoref.moeacgs.gov.tw/GipOpenWeb/wSite/mp?mp=6" target="_blank">臺灣地質知識服務網</a></li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20230925" class="heading" id="20230925"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20230925</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="目標" class="heading" id="目標"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>目標</h3><div class="heading-children"><div><ol>
+<li data-line="0">從資料庫取得觀測資料進行初步分析</li>
+<li data-line="1">取得資料的年月區間（20xx年？月～20xx年？月）</li>
+<li data-line="2">這幾年的大屯火山前人研究報告重點摘要<br>
+a. 是否與目前取得資料的年月區間重疊？重疊的是哪些時段？<br>
+b. 在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？<br>
+c. 觀察逐時的圖表，有什麼較為特殊的現象？<br>
+d. 哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？<br>
+e. 還有哪些數據or關係圖是前人未提到但想到可以試著探討的？</li>
+</ol></div><div><ul>
+<li data-line="0">survey前人研究主要想了解的是上面提到的 3a-e</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20231030" class="heading" id="20231030"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20231030</h2><div class="heading-children"><div><ul>
+<li data-line="0">地溫四個測站地圖、岩漿庫分布</li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>深度溫度對時間分析 (受地表影響/受地底影響主導)
+<ul>
+<li data-line="2">150m 溫度躍遷100m~200m</li>
+<li data-line="3">10m與100m地溫反轉</li>
+</ul>
+</li>
+</ul></div><div style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th></th>
+<th>10m</th>
+<th>100m</th>
+<th>150m</th>
+<th>180m</th>
+<th>200m</th>
+<th>250m</th>
+<th>300m</th>
+<th>350m</th>
+<th>400m</th>
+<th>450m</th>
+<th>475m</th>
+<th>480m</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平均</td>
+<td>18.34007168</td>
+<td>18.66915615</td>
+<td>23.61577036</td>
+<td>24.13956983</td>
+<td>24.37736748</td>
+<td>35.76081979</td>
+<td>47.04840655</td>
+<td>63.89498584</td>
+<td>75.95493597</td>
+<td>DIV/0!</td>
+<td>104.7645724</td>
+<td>DIV/0!</td>
+</tr>
+<tr>
+<td>變異數</td>
+<td>0.01938196</td>
+<td>0.069277596</td>
+<td>0.75154873</td>
+<td>0.14326589</td>
+<td>0.571386964</td>
+<td>0.067031377</td>
+<td>0.048039003</td>
+<td>0.04208288</td>
+<td>0.042423577</td>
+<td>DIV/0!</td>
+<td>0.017502763</td>
+<td>DIV/0!</td>
+</tr>
+</tbody>
+</table></div><div class="heading-wrapper"><h3 data-heading="參考研究目的" class="heading" id="參考研究目的"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>參考研究目的</h3><div class="heading-children"><div><ul>
+<li data-line="0"><a data-tooltip-position="top" aria-label="https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-051908.pdf?0.3112267712885537" rel="noopener" class="external-link" href="https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-051908.pdf?0.3112267712885537" target="_blank">探討不同型態的海底峽谷對底棲動物群聚結構的影響</a><br>
+一、透過水文及沉積物特性討論海底峽谷與大陸斜坡的環境差異，並以地形特性輔助討論高 屏與枋寮峽谷的環境差異。<br>
+二、分別從生物密度與生物組成兩個面向討論高屏與枋寮峽谷的生物群聚結構差異。<br>
+三、討論各環境因子與高屏峽谷與枋寮峽谷間生物群聚結構差異的關聯性。</li>
+<li data-line="4"><a data-tooltip-position="top" aria-label="https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-051908.pdf?0.21779402357588085" rel="noopener" class="external-link" href="https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-051908.pdf?0.21779402357588085" target="_blank">從臺灣中部地區彰化斷層之斷層地形探討其活動特性</a><br>
+一、透過地形分析找出彰化斷層可能的地表出露位置。<br>
+二、實地測量年輕斷層崖的高度，透過高度分析推算彰化斷層一次錯動的可能抬升量。<br>
+三、推算彰化斷層一次錯動可能造成的地震規模。</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20231106" class="heading" id="20231106"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20231106</h2><div class="heading-children"><div><ul>
+<li data-line="0">老樣子要<strong>畫地區</strong></li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>把淺深度對更長時間做圖
+<ul>
+<li data-line="2">還有更多測站</li>
+</ul>
+</li>
+<li data-line="3">做地溫梯度</li>
+</ul></div><div class="heading-wrapper"><h3 data-heading="worth mentioning" class="heading" id="worth_mentioning"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>worth mentioning</h3><div class="heading-children"><div><ul>
+<li data-line="0">10m有週年變動<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-mi class="mjx-n"><mjx-utext variant="normal" style="font-family: MJXZERO, serif;">來</mjx-utext></mjx-mi><mjx-mi class="mjx-n"><mjx-utext variant="normal" style="font-family: MJXZERO, serif;">源</mjx-utext></mjx-mi><mjx-mi class="mjx-n"><mjx-utext variant="normal" style="font-family: MJXZERO, serif;">請</mjx-utext></mjx-mi><mjx-mi class="mjx-n"><mjx-utext variant="normal" style="font-family: MJXZERO, serif;">求</mjx-utext></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msup></mjx-math></mjx-container></span>，但跟氣溫變化有相位差</li>
+<li data-line="1">中淺深度的0707前驟增</li>
+<li data-line="2">100m在200707後快速增加，但大部分深度驟增在200707之前發生</li>
+<li data-line="3">暑期通常是大變動的起迄點 (一次微分)</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20231218" class="heading" id="20231218"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20231218</h2><div class="heading-children"><div><blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>|</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗設計(土壤逸氣對濕度關係圖)
+<ul>
+<li data-line="1">安山岩黃壤、安山岩石質土、安山岩紅壤、黑色土、裸崖或崩崖</li>
+<li data-line="2">氣瓶or氣泡水機瓶or實驗</li>
+<li data-line="3">濕度控制</li>
+<li data-line="4">裝置圖</li>
+</ul>
+</li>
+<li data-line="5"><a data-tooltip-position="top" aria-label="https://www.sciencedirect.com/science/article/pii/S0016706123001702" rel="noopener" class="external-link" href="https://www.sciencedirect.com/science/article/pii/S0016706123001702" target="_blank">Relationship between soil CO2 fluxes and soil moisture - ScienceDirect</a>
+<blockquote>
+<p>Gas fluxes measured in the oxic incubations show that CO2 fluxes were maximal (31.2 ± 1.8 nmol cm−3 soil hr-1) at moderate moisture content (65% WFPS), as commonly reported.</p>
+<blockquote>
+<p>WFPS =&nbsp;water-filled pore space&nbsp;(%)<br>
+SWC = volumetric soil water content (vol. %)<br>
+BD = soil bulk density (g/cm³)<br>
+PD = particle density (2.65 g/cm³)	</p>
+</blockquote>
+</blockquote>
+</li>
+<li data-line="11"><a data-tooltip-position="top" aria-label="https://bsssjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2389.2010.01277.x" rel="noopener" class="external-link" href="https://bsssjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2389.2010.01277.x" target="_blank">Greenhouse gas emissions from European soils under different land use: effects of soil moisture and temperature</a>
+<blockquote>
+<p>Maximum CO2&nbsp;emissions occurred at intermediate soil moisture.</p>
+</blockquote>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20231225" class="heading" id="20231225"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20231225</h2><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="實驗內容（簡易版）" class="heading" id="實驗內容（簡易版）"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗內容（簡易版）</h4><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗器材
+<ul>
+<li data-line="1">大寶特瓶*1 (尺寸38mm雙螺紋)</li>
+<li data-line="2">壓力計(28mm)</li>
+<li data-line="3">二氧化碳氣瓶、<strong>供氣線(尺寸?)</strong></li>
+<li data-line="4">導電度測定arduino</li>
+</ul>
+</li>
+<li data-line="5"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗<a data-tooltip-position="top" aria-label="https://teaching.ch.ntu.edu.tw/gclab/doc/demonstration/henry%27s_law_constant.pdf" rel="noopener" class="external-link" href="https://teaching.ch.ntu.edu.tw/gclab/doc/demonstration/henry%27s_law_constant.pdf" target="_blank">裝置</a>
+<ul>
+<li data-line="6"><del>\<a rel="noopener" class="external-link" href="https://i.imgur.com/JrcJZVn.pn" target="_blank">https://i.imgur.com/JrcJZVn.pn</a></del></li>
+</ul>
+</li>
+<li data-line="7"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗方式
+<ul>
+<li data-line="8">壓力計在下，土壤滴水損壞壓力計?</li>
+</ul>
+</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20240126" class="heading" id="20240126"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240126</h2><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>器材
+<ul class="contains-task-list">
+<li data-line="1" data-task="x" class="task-list-item is-checked"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><input data-line="1" checked="" type="checkbox" class="task-list-item-checkbox">寶特瓶本體
+<ul class="contains-task-list">
+<li data-line="2" data-task="x" class="task-list-item is-checked"><input data-line="2" checked="" type="checkbox" class="task-list-item-checkbox">墊高: 束帶</li>
+</ul>
+</li>
+<li data-line="3" data-task="x" class="task-list-item is-checked"><input data-line="3" checked="" type="checkbox" class="task-list-item-checkbox"><a data-tooltip-position="top" aria-label="https://shopee.tw/%E7%8F%BE%E8%B2%A8-%E6%B0%B4%E7%AE%A1%E9%85%8D%E4%BB%B6-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E6%B0%B4%E7%93%B6%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8F%9B%E6%8E%A5%E9%A0%AD%E5%AF%B6%E7%89%B9%E7%93%B6%E9%A3%B2%E6%96%99%E7%93%B6%E8%AE%8A%E6%B0%B4%E7%AE%A1%E6%8E%A5%E9%A0%AD%E6%A8%B9%E6%9C%A8%E7%87%9F%E9%A4%8A%E6%B6%B2%E6%8E%A5%E5%8F%A3%E6%BB%B4%E6%B2%B9%E5%8F%A3-i.961385895.15899251052" rel="noopener" class="external-link" href="https://shopee.tw/%E7%8F%BE%E8%B2%A8-%E6%B0%B4%E7%AE%A1%E9%85%8D%E4%BB%B6-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E6%B0%B4%E7%93%B6%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8F%9B%E6%8E%A5%E9%A0%AD%E5%AF%B6%E7%89%B9%E7%93%B6%E9%A3%B2%E6%96%99%E7%93%B6%E8%AE%8A%E6%B0%B4%E7%AE%A1%E6%8E%A5%E9%A0%AD%E6%A8%B9%E6%9C%A8%E7%87%9F%E9%A4%8A%E6%B6%B2%E6%8E%A5%E5%8F%A3%E6%BB%B4%E6%B2%B9%E5%8F%A3-i.961385895.15899251052" target="_blank">寶特瓶轉水管</a>或是任何寶特瓶轉三分</li>
+<li data-line="4" data-task="x" class="task-list-item is-checked"><input data-line="4" checked="" type="checkbox" class="task-list-item-checkbox"><a data-tooltip-position="top" aria-label="https://shopee.tw/9%E7%A8%AE%E8%A6%8F%E6%A0%BC%E2%98%85%E8%AE%8A%E5%BE%91%E6%8E%A5%E9%A0%AD-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E7%AE%A1%E6%8E%A5%E9%A0%AD-%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8E%A5%E9%A0%AD-%E9%A2%A8%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-%E6%B0%B4%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-4mm-6mm-8mm-12mm-16mm-%E9%9B%B6%E4%BB%B6-i.4791312.8553737932?sp_atk=cbd76496-853f-4ae1-a58c-eaad1d769172&amp;xptdk=cbd76496-853f-4ae1-a58c-eaad1d769172" rel="noopener" class="external-link" href="https://shopee.tw/9%E7%A8%AE%E8%A6%8F%E6%A0%BC%E2%98%85%E8%AE%8A%E5%BE%91%E6%8E%A5%E9%A0%AD-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E7%AE%A1%E6%8E%A5%E9%A0%AD-%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8E%A5%E9%A0%AD-%E9%A2%A8%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-%E6%B0%B4%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-4mm-6mm-8mm-12mm-16mm-%E9%9B%B6%E4%BB%B6-i.4791312.8553737932?sp_atk=cbd76496-853f-4ae1-a58c-eaad1d769172&amp;xptdk=cbd76496-853f-4ae1-a58c-eaad1d769172" target="_blank">4mm to 8mm軟管轉接頭</a>、 <a data-tooltip-position="top" aria-label="https://shopee.tw/9%E7%A8%AE%E8%A6%8F%E6%A0%BC%E2%98%85%E8%AE%8A%E5%BE%91%E6%8E%A5%E9%A0%AD-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E7%AE%A1%E6%8E%A5%E9%A0%AD-%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8E%A5%E9%A0%AD-%E9%A2%A8%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-%E6%B0%B4%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-4mm-6mm-8mm-12mm-16mm-%E9%9B%B6%E4%BB%B6-i.4791312.8553737932?sp_atk=cbd76496-853f-4ae1-a58c-eaad1d769172&amp;xptdk=cbd76496-853f-4ae1-a58c-eaad1d769172" rel="noopener" class="external-link" href="https://shopee.tw/9%E7%A8%AE%E8%A6%8F%E6%A0%BC%E2%98%85%E8%AE%8A%E5%BE%91%E6%8E%A5%E9%A0%AD-%E8%BD%89%E6%8E%A5%E9%A0%AD-%E7%AE%A1%E6%8E%A5%E9%A0%AD-%E8%BB%9F%E7%AE%A1%E8%BD%89%E6%8E%A5%E9%A0%AD-%E9%A2%A8%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-%E6%B0%B4%E7%AE%A1%E8%BD%89%E6%8F%9B%E9%A0%AD-4mm-6mm-8mm-12mm-16mm-%E9%9B%B6%E4%BB%B6-i.4791312.8553737932?sp_atk=cbd76496-853f-4ae1-a58c-eaad1d769172&amp;xptdk=cbd76496-853f-4ae1-a58c-eaad1d769172" target="_blank">8mm to 三分軟管轉接頭</a></li>
+<li data-line="5" data-task="x" class="task-list-item is-checked"><input data-line="5" checked="" type="checkbox" class="task-list-item-checkbox">三分管</li>
+<li data-line="6" data-task="x" class="task-list-item is-checked"><input data-line="6" checked="" type="checkbox" class="task-list-item-checkbox"><strong>大屯火山嚴選土</strong></li>
+<li data-line="7" data-task="x" class="task-list-item is-checked"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><input data-line="7" checked="" type="checkbox" class="task-list-item-checkbox"><a data-tooltip-position="top" aria-label="https://www.sciket.com/product/22699" rel="noopener" class="external-link" href="https://www.sciket.com/product/22699" target="_blank">Molding Vacuum Desiccator with Gauge</a>
+<ul class="contains-task-list">
+<li data-line="8" data-task="x" class="task-list-item is-checked"><input data-line="8" checked="" type="checkbox" class="task-list-item-checkbox">一些填充物</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="9"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>擇一
+<ul class="contains-task-list">
+<li data-line="10" data-task="x" class="task-list-item is-checked"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><input data-line="10" checked="" type="checkbox" class="task-list-item-checkbox">Arduino路線
+<ul class="contains-task-list">
+<li data-line="11" data-task="x" class="task-list-item is-checked"><input data-line="11" checked="" type="checkbox" class="task-list-item-checkbox">Arduino</li>
+<li data-line="12" data-task="x" class="task-list-item is-checked"><input data-line="12" checked="" type="checkbox" class="task-list-item-checkbox">其他配備</li>
+<li data-line="13" data-task="x" class="task-list-item is-checked"><input data-line="13" checked="" type="checkbox" class="task-list-item-checkbox"><a data-tooltip-position="top" aria-label="https://sites.google.com/view/rayarduino/soil-moisture" rel="noopener" class="external-link" href="https://sites.google.com/view/rayarduino/soil-moisture" target="_blank">電導度感測器</a></li>
+<li data-line="14" data-task="x" class="task-list-item is-checked"><input data-line="14" checked="" type="checkbox" class="task-list-item-checkbox">(三用電表路線)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div><div class="heading-wrapper"><h3 data-heading="實驗方式" class="heading" id="實驗方式"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗方式</h3><div class="heading-children"><div><ol>
+<li data-line="0">玻璃罩氣壓打氣至1atm，紀錄濕度與氣壓起始、變動量</li>
+<li data-line="1">以更大氣壓(1.5atm)重複第一步</li>
+<li data-line="2">作圖此濕度的氣壓逐時變動圖</li>
+<li data-line="3">在確保水分均勻分布的情況下增加濕度</li>
+<li data-line="4">重複1-4步多次，作經過固定時間之氣壓變動量對濕度圖</li>
+</ol></div><div><ul>
+<li data-line="0">紀錄：逐時的氣壓(攝影+tracker)與濕度(Arduino)</li>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>目標是了解在底下有&gt;一大氣壓的氣體時，氣體的穿透行為與效率
+<ul>
+<li data-line="2">進而知道下雨會對氣體通量造成什麼影響</li>
+</ul>
+</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="20240219" class="heading" id="20240219"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240219</h2><div class="heading-children"><div><p><img src="https://i.imgur.com/FDA02VE.png" referrerpolicy="no-referrer"></p></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>實驗器材 (as of today 0219)
+<ul>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://shop.mirotek.com.tw/checkout/order-received/25954/?key=wc_order_0jnUn20OlilJP" rel="noopener" class="external-link" href="https://shop.mirotek.com.tw/checkout/order-received/25954/?key=wc_order_0jnUn20OlilJP" target="_blank">Arduino</a>
+<ul>
+<li data-line="2"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>YL-69 土壤濕度感測器模組</strong>
+<ul>
+<li data-line="3"><a data-tooltip-position="top" aria-label="https://sites.google.com/view/rayarduino/soil-moisture" rel="noopener" class="external-link" href="https://sites.google.com/view/rayarduino/soil-moisture" target="_blank">Ray 的 Arduino 教學 - Soil Moisture</a></li>
+</ul>
+</li>
+<li data-line="4">KEYES 土壤感測器 濕度計檢測模組</li>
+<li data-line="5">GY-BMP280-3.3 高精度大氣壓力模組</li>
+<li data-line="6">板子跟其他線材</li>
+</ul>
+</li>
+<li data-line="7"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>管路/閥門
+<ul>
+<li data-line="8">塑膠逆止閥2個</li>
+<li data-line="9">金屬控制閥3個</li>
+<li data-line="10">三通閥3+1個</li>
+</ul>
+</li>
+<li data-line="11"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>管路
+<ul>
+<li data-line="12">高壓管 (6mm/4mm)</li>
+<li data-line="13">保特瓶接雙水管頭 兩個</li>
+</ul>
+</li>
+<li data-line="14">氣壓計</li>
+<li data-line="15">電動打氣筒</li>
+</ul>
+</li>
+<li data-line="16">
+<h1 data-heading="麵包板不要接錯  ![](https://i.imgur.com/RMXPY1y.png)" class="heading" id="麵包板不要接錯__![](https://i.imgur.com/RMXPY1y.png)">麵包板不要接錯  <img src="https://i.imgur.com/RMXPY1y.png" referrerpolicy="no-referrer"></h1>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20240226" class="heading" id="20240226"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240226</h2><div class="heading-children"><div><ul>
+<li data-line="0">測試實驗失敗<br>
+- 原因：氣體從土壤與容器的間隙漏出<br>
+- 改進：出氣口改成在容器的正中央<br>
+<img src="https://i.imgur.com/lLN3FgS.png" referrerpolicy="no-referrer"></li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20240307" class="heading" id="20240307"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240307</h2><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>正式實驗失敗
+<ul>
+<li data-line="1">實驗裝置封閉出口時具有氣密性，但出口開啟後土壤無法有效維持氣壓</li>
+<li data-line="2">改進：增加濕度(濕度太高失去實驗意義)或土壤密度</li>
+</ul>
+</li>
+<li data-line="3"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>成發報告架構
+<ol>
+<li data-line="4">文獻探討：通氣量與降雨量之關聯性</li>
+<li data-line="5">主軸：地溫以及通氣量、降雨量數據分析</li>
+<li data-line="6">實驗：通氣量(氣壓逐時變動)、降雨量數據分析</li>
+<li data-line="7">展望：實驗改進</li>
+</ol>
+</li>
+<li data-line="8"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>其他筆記
+<ul>
+<li data-line="9"><a data-tooltip-position="top" aria-label="https://github.com/deviousasti/csv-merge" rel="noopener" class="external-link" href="https://github.com/deviousasti/csv-merge" target="_blank">GUI tool to merge CSV files</a></li>
+<li data-line="10"><a data-tooltip-position="top" aria-label="https://codis.cwa.gov.tw/StationData" rel="noopener" class="external-link" href="https://codis.cwa.gov.tw/StationData" target="_blank">CODiS 氣候資料服務系統</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h2 data-heading="20240311" class="heading" id="20240311"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240311</h2><div class="heading-children"><div><ul>
+<li data-line="0">摘要寫作要點<br>
+- 介紹資料來源<br>
+- 繪製圖表<br>
+- 推論<br>
+- 介紹實驗與實驗結果
+<blockquote>
+<p>摘要：<br>
+大屯火山群北鄰台北盆地，其分類為活火山，林正洪（2016）的研究中亦有提到大屯火山群下方有岩漿庫，雖不表示其有立即噴發危險，但深入研究其活動情形及活動情形，乃至由此研究成果建置預警系統對於大台北地區居民仍然重要。<br>
+本研究透過經濟部地質調查及礦業管理中心提供之大屯火山地區2012年至2019年間CO2通量數據，以及2006年至2019年間土壤溫度之資料進行對大屯火山地區之岩漿活動研究，繪製CO2通量之逐時圖及年、月、日平均變動圖，並將其與降雨量變化圖對比，觀察到CO2通量與溫度呈正相關，並且與降雨量呈負相關；此外也觀察到了地溫隨時間增加，以及表層地溫受到氣溫影響而有季節性變動等等。<br>
+為了證實CO2通量與降雨量呈負相關之推論，我們設計並進行了通氣量對土壤濕度之相關性實驗，透過控制土壤表面施加壓力並利用Arduino測量並操作土壤濕度的方式，來探討降雨量影響通量之實驗。但礙於土壤無法留住氣壓等原因，實驗未能成功，期許未來能有機會改進實驗裝置並實測與證明上述之結論。</p>
+</blockquote>
+</li>
+<li data-line="9">研究架構</li>
+</ul></div><div><ol>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>逐時圖
+<ul>
+<li data-line="1">缺損、裁切、去除錯誤值(2016.8~)</li>
+</ul>
+</li>
+<li data-line="2"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>摺疊月均
+<ul>
+<li data-line="3">有冬半年及夏半年之特徵</li>
+<li data-line="4">16/17與18/19相反</li>
+</ul>
+</li>
+<li data-line="5"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>一日
+<ul>
+<li data-line="6">溫度非常明顯，故夏季應較高</li>
+</ul>
+</li>
+<li data-line="7"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>月日軍
+<ul>
+<li data-line="8">同上</li>
+</ul>
+</li>
+<li data-line="9"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>月均
+<ul>
+<li data-line="10">溫度不是長期主導flux的關鍵</li>
+<li data-line="11">濕度負相關</li>
+</ul>
+</li>
+<li data-line="12">實驗</li>
+<li data-line="13">推測與溫度與濕度、火山活動有關</li>
+</ol></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>雨量資料
+<ul>
+<li data-line="1"><a data-tooltip-position="top" aria-label="https://gweb.wra.gov.tw/HydroInfo/StDataInfo/StDataInfo?RA&amp;01A420" rel="noopener" class="external-link" href="https://gweb.wra.gov.tw/HydroInfo/StDataInfo/StDataInfo?RA&amp;01A420" target="_blank">水文資訊網整合服務系統 - 竹子湖(2)雨量站</a></li>
+<li data-line="2"><a data-tooltip-position="top" aria-label="https://gweb.wra.gov.tw/HydroInfo/ComplexQuery/" rel="noopener" class="external-link" href="https://gweb.wra.gov.tw/HydroInfo/ComplexQuery/" target="_blank">水文資訊網整合服務系統</a></li>
+</ul>
+</li>
+<li data-line="3">Lin, CH. Evidence for a magma reservoir beneath the Taipei metropolis of Taiwan from both S-wave shadows and P-wave delays. Sci Rep 6, 39500 (2016)</li>
+</ul></div><div class="heading-wrapper"><h4 data-heading="20240314" class="heading" id="20240314"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240314</h4><div class="heading-children"><div><blockquote>
+<p>摘要修正版：<br>
+大屯火山群北鄰台北盆地，其分類為活火山，林正洪（2016）的研究中亦有提到大屯火山群下方有岩漿庫，雖不表示其有立即噴發危險，但深入研究其活動情形，乃至於建置預警系統對於大台北地區居民仍然重要。<br>
+本研究透過經濟部地質調查及礦業管理中心提供之大屯火山地區八煙與小油坑測站2012年至2019年間CO₂通量數據，以及2006年至2019年間小油坑、擎天崗、菁山及龜山測站土壤溫度之資料進行對大屯火山地區之岩漿活動研究，繪製CO₂通量之逐時圖及年、月、日等不同時間解析度的通量平均值變化圖，進而與降雨量變化圖比對。初步觀察到CO₂通量與氣溫與表層地溫呈正相關，並且與降雨量呈負相關；此外也觀察到了深度110至190公尺之地溫每年顯著減少，以及較為表層之深度20、40、60公尺地溫數據受到氣溫影響而有季節性變動等現象。總體而言，CO₂通量的變動受到溫度變化影響，可能同時也有受到來自岩層孔隙比、含水程度以及地下氣體的體積變動影響。<br>
+為了驗證CO₂通量與降雨量呈負相關之推論，本研究也設計並進行了土壤濕度對通氣量之相關性實驗，於封閉系統中加壓空氣並使其通過潮濕土壤，期能建立兩者之間的關係。但由於實驗使用的土壤體積有限，孔隙互相連通而出現快速通氣，仍無法與自然地層特性類比，期許未來能有機會改進實驗裝置並驗證上述推論。</p>
+</blockquote></div><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>地溫梯度
+<ul>
+<li data-line="1"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>TS Max-min 
+<ul>
+<li data-line="2">地溫梯度 最大值-最小值除公尺差</li>
+</ul>
+</li>
+<li data-line="3"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>TS Top-Down
+<ul>
+<li data-line="4">地溫梯度 最淺溫度-最深溫度除公尺差</li>
+<li data-line="5">比較有規律、無異常值</li>
+<li data-line="6"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>注意皆有"逆溫"
+<ul>
+<li data-line="7">*地表高於地底</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="8"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="https://climate.copernicus.eu/surface-air-temperature-january-2019" rel="noopener" class="external-link" href="https://climate.copernicus.eu/surface-air-temperature-january-2019" target="_blank">Surface air temperature for January 2019 | Copernicus</a>
+<ul>
+<li data-line="9">不是很理解歐洲的溫度異常跟台灣有關的原因</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h4 data-heading="20240318" class="heading" id="20240318"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240318</h4><div class="heading-children"><div><ul>
+<li data-line="0">2006年至2019年大屯火山地區地溫與噴氣孔CO₂通量變動紀錄及其特性分析</li>
+</ul></div></div></div><div class="heading-wrapper"><h4 data-heading="20240325" class="heading" id="20240325"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20240325</h4><div class="heading-children"><div><blockquote>
+<p>此外，地溫監測是探討火山活動的主要研究工作之一（Tillting, 1989），如果火山地區地底下有岩漿庫、殘餘的岩漿或有後火成活動，則通常在地表附近可發現較高的地溫，地底下的地溫梯度也會偏大，並呈現較高的熱流值 (Zeni et al., 2007)，然而測量這些溫度參數並無法探討火山的活動性，要了解地底下火山的活動情形，必須對地表的地溫做長期的監測，從溫度的變化趨勢才能進一步推測地下火山活動的異常變化(Sudo and Hurst, 1998)。目前在陽明山國家公園之大屯火山地區已有多處地溫監測站，例如小油坑及擎天崗等地區。</p>
+</blockquote></div><div><ul>
+<li data-line="0">科技部補助專題研究計畫成果期末報告<br>
+- 大屯火山觀測站之建置(III)<br>
+- 計畫主持人： 林正洪
+<blockquote>
+<p>自2008年 6 月 20 日 至 10 月 27 日止連續分析，本地區的二氧化碳濃度介於0.02%至&gt;10%；逸氣通量介於-0.06 %min 至 &gt;0.02 %min結果顯示，二氧化碳通量與當地的降雨有密切關係，當有驟雨發生時，土壤氣通量明顯降低。顯示因降雨會使得土壤滲透度（孔隙度）降低，造成逸氣通道不順暢，使得通量明顯降低。</p>
+</blockquote>
+</li>
+<li data-line="4">大屯火山群地底岩漿庫之調查與監測─土壤氣體之觀測調查<br>
+- 研究主持人：楊燦堯教授
+<blockquote>
+<p>根據結果顯示大屯火山群小油坑地區的土壤二氧化碳濃度在單位時間內的累積濃度有增加的趨勢，亦代表土壤二氧化碳逸氣通量有明顯的增加(圖四)。由監測記錄結果顯示土壤二氧化碳逸氣通量並非持續且穩定的增加，而是呈現間歇性、沒有規律的變化。土壤二氧化碳濃度越來越高可能與氣體來源有關，大屯火山群的岩漿活動可能越來越趨於活躍而釋放出更多的二氧化碳，故可在單位時間內記錄到較高的累積濃度和逸氣通量；但這些推論都需要更長期的資料累積才能進一步的證實。當火山活動並非穩定且持續的釋放二氧化碳，則有可能會造成土壤二氧化碳逸氣通量呈現沒有規律的變化。</p>
+</blockquote>
+</li>
+<li data-line="7">科技部補助專題研究計畫成果期末報告<br>
+- 北台灣火山觀測與防災應用<br>
+- 計畫主持人： 林正洪
+<blockquote>
+<p>102而二氧化碳濃度也有日週期變化，當日峰值平均而言約為 20~30% 左右。<br>
+103本年度監測結果在2 月中至4 月中出現二氧化碳逸氣通量相對高值，其他時段都處平穩期間，沒有太大的變異，推論目前仍處於平靜的狀態。<br>
+104而二氧化碳濃度日峰值平均約為 20~30 % 。兩者在大時間尺度上與大氣溫度、降雨等參數無明顯相關變化，惟兩者同樣都有日周期的變化，在正午的時候兩者濃度均達到當日最高，半夜的時候則反之降至最低。</p>
+</blockquote>
+</li>
+<li data-line="13">經濟部中央地質調查所101年度勞務計畫成果報告書<br>
+- 台灣北部火山活動觀測研究 台灣北部火山地區背景環境資料監測(104)<br>
+- 計畫主持人：宋聖榮
+<blockquote>
+<p>兩測站的觀測資料顯示：菁山測站井下溫度變化，除了深度1公尺處之溫度有些微的日週期變化外，其餘均無顯著週期性變化，顯示氣溫的日變化影響很小。由於岩性因素以及套管與地層間的水泥工程不完善，63公尺以上溫度受降雨影響，變化較大，約1.94 ~2.79℃；而93公尺以下變化幅度僅0.01 ~ 0.08℃，可能為套管與地層間水泥裂隙已被降雨時所帶來的泥屑或岩屑密封，使雨水不易向下滲透，較可以反映出真實的地溫變化。深度153 ~ 168公尺之熱流值有隨時間增高之趨勢，直到2006年1月29日溫度才逐漸趨於穩定，變化幅度約有7.01 mW/m2。<br>
+竹子湖測站僅地表氣溫受氣候日週期變化影響，井內溫度皆無顯著週期性變化，溫度變化幅度除了3、13、138公尺處約5.914、0.287℃和0.249℃外，其他深度的溫度變化皆在0.09℃以內，且皆不受降雨影響。測站深度153 ~ 188公尺之熱流值，自監測開始便逐漸隨時間增高一直至2005年5月24日，之後開始有下降的趨勢，到了2006年4月26日後，又開始隨時間逐漸上升，整體變化幅度約有8.08mW/m2。</p>
+</blockquote>
+</li>
+<li data-line="18">大屯火山群井下溫度監測研究<br>
+- <a data-tooltip-position="top" aria-label="http://ntur.lib.ntu.edu.tw/handle/246246/56585" rel="noopener" class="external-link" href="http://ntur.lib.ntu.edu.tw/handle/246246/56585" target="_blank">臺灣機構典藏  NTUR:Item 246246/56585</a>
+<blockquote>
+<p>結果顯示，土壤中二氧化碳通量明顯受到降雨量影響，在降大雨初期逸氣通量會突增，隨後因降雨改變土壤的滲透率造成逸氣通道不順而使逸氣通量下降。排除降雨影響外，逸氣通量亦有明顯變化，此大幅之通量變化有可能與當地之地熱活動有關。</p>
+</blockquote>
+</li>
+<li data-line="21">大屯火山群地熱區中土壤氣體之二氧化碳通量<br>
+- <a data-tooltip-position="top" aria-label="https://www.airitilibrary.com/Article/Detail/U0001-2202201011132700" rel="noopener" class="external-link" href="https://www.airitilibrary.com/Article/Detail/U0001-2202201011132700" target="_blank">大屯火山群地熱區中土壤氣體之二氧化碳通量｜Airiti Library 華藝線上圖書館</a>
+<blockquote>
+<p><mark>好的文獻回顧/文獻探討(literature review):</mark><br>
+提供將文章分類的類型學，幫助讀者關注尚有爭議的議題、矛盾與新問題。<br>
+在與你的研究領域相關的科學文獻中<strong>總結</strong>出最相關和核心的內容<br>
+綜合該研究領域中的先前研究與作者、強調先前研究的重點，與找出與現行研究間的斷層和任何不一致的地方。<br>
+讓讀者大致了解該領域的背景知識，並指出先前哪一個研究是重要的或指出錯誤。</p>
+</blockquote>
+</li>
+<li data-line="28"><a data-tooltip-position="top" aria-label="https://www.nlps.tyc.edu.tw/static/info/old/97/5/2/rain.htm" rel="noopener" class="external-link" href="https://www.nlps.tyc.edu.tw/static/info/old/97/5/2/rain.htm" target="_blank">台灣各氣象站月平均降雨量統計表</a></li>
+<li data-line="29"><a data-tooltip-position="top" aria-label="http://ntur.lib.ntu.edu.tw/bitstream/246246/11764/1/892116M002040.pdf" rel="noopener" class="external-link" href="http://ntur.lib.ntu.edu.tw/bitstream/246246/11764/1/892116M002040.pdf" target="_blank">892116M002040.pdf</a></li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="整理資料" class="heading" id="整理資料"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>整理資料</h2><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="取得資料的年月區間（20xx年？月～20xx年？月）" class="heading" id="取得資料的年月區間（20xx年？月～20xx年？月）"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>取得資料的年月區間（20xx年？月～20xx年？月）</h4><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>國科會觀測站-地殼變形監測 (兩軸傾斜)
+<ul>
+<li data-line="1">20230101~0531</li>
+<li data-line="2">逐雙小時</li>
+</ul>
+</li>
+<li data-line="3"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>國科會觀測站-地表溫度監測 (土壤溫度)
+<ul>
+<li data-line="4">20230101~0113+0307~0531</li>
+<li data-line="5">逐雙小時</li>
+</ul>
+</li>
+<li data-line="6"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>國科會觀測站-地震活動監測 (累積)
+<ul>
+<li data-line="7">逐日</li>
+<li data-line="8">20230101~0531</li>
+</ul>
+</li>
+<li data-line="9"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>國科會觀測站-火山氣體監測 (<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math></mjx-container></span>濃度/濕度/空氣溫度)
+<ul>
+<li data-line="10">20230101~0531</li>
+<li data-line="11">逐雙小時</li>
+</ul>
+</li>
+<li data-line="12"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區地溫觀測資料-小油坑 (200/250/300/330/350m)
+<ul>
+<li data-line="13">20170318~20200110</li>
+<li data-line="14">逐日</li>
+</ul>
+</li>
+<li data-line="15"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區地溫觀測資料-擎天崗 (10/100/150/180/200/250/300/350/400/450/475/480m)
+<ul>
+<li data-line="16">20070411~20191121</li>
+<li data-line="17">逐小時</li>
+</ul>
+</li>
+<li data-line="18"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區地溫觀測資料-菁山 (20/40/60/80/100/110/130/150/160/170/180/190/200m)
+<ul>
+<li data-line="19">20060919~20191121</li>
+<li data-line="20">逐小時</li>
+</ul>
+</li>
+<li data-line="21"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區地溫觀測資料-龜山 (30/60/100/130/160/180/200/210/220/230/240/250/260/270m)
+<ul>
+<li data-line="22">20060925~20191115</li>
+<li data-line="23">逐小時</li>
+</ul>
+</li>
+<li data-line="24"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區火山氣體連續觀測資料( CO2 flux)
+<ul>
+<li data-line="25">20121220~20130411、20160101~20191217</li>
+<li data-line="26">逐小時</li>
+</ul>
+</li>
+<li data-line="27"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區溫泉採樣分析點位資料
+<ul>
+<li data-line="28">採樣點的座標</li>
+</ul>
+</li>
+<li data-line="29"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山地區火山氣體採樣分析點位資料
+<ul>
+<li data-line="30">採樣點的座標</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h4 data-heading="這幾年的大屯火山前人研究報告重點摘要" class="heading" id="這幾年的大屯火山前人研究報告重點摘要"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>這幾年的大屯火山前人研究報告重點摘要</h4><div class="heading-children"><div class="heading-wrapper"><h5 data-heading="是否與目前取得資料的年月區間重疊？重疊的是哪些時段？" class="heading" id="是否與目前取得資料的年月區間重疊？重疊的是哪些時段？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>是否與目前取得資料的年月區間重疊？重疊的是哪些時段？</h5><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>北台灣火山觀測與防災應用(106年)
+<ul>
+<li data-line="1">降雨-CO2濃度/通量：2008~2009</li>
+<li data-line="2">水準：2007~2013</li>
+</ul>
+</li>
+<li data-line="3"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>北台灣火山觀測與防災應用(107年)
+<ul>
+<li data-line="4">地震-降雨-CO2濃度/通量：2017上</li>
+</ul>
+</li>
+<li data-line="5"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>北台灣火山觀測與防災應用(108年)
+<ul>
+<li data-line="6">微震：2019</li>
+</ul>
+</li>
+<li data-line="7"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>台灣北部火山地區背景環境資料監測
+<ul>
+<li data-line="8">地表變形：2006~2020</li>
+<li data-line="9">CO2-HCl-Stotal、N2-Ar-He三角圖：2016~2019</li>
+<li data-line="10">氯離子、硫酸根、：2016~2019</li>
+<li data-line="11">氣溫-土壤溫度/酸鹼-降雨-CO2濃度/通量-氡氣：2019</li>
+<li data-line="12">傾斜儀：2019</li>
+</ul>
+</li>
+<li data-line="13"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>台灣北部火山地區背景環境資料監測(~100)
+<ul>
+<li data-line="14">氦同位素：1999~2013</li>
+<li data-line="15">氡氣-氣溫-土壤溫度-氣壓-濕度-雨量：2012/10~2012/11</li>
+<li data-line="16">溫泉TDS-pH-導電度-溫度-日雨量：2009~2012</li>
+<li data-line="17">pH：2006~2012</li>
+<li data-line="18">月地溫梯度：2012</li>
+</ul>
+</li>
+</ul></div><div class="heading-wrapper"><h6 data-heading="過去的研究結果(93~100)" class="heading" id="過去的研究結果(93~100)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>過去的研究結果(93~100)</h6><div class="heading-children"><div><pre><code>經濟部中央地質調查所於民國93年至民國100年執行「大台北地區特殊地質災害調查與監測」兩期共8年之計畫。其中，在火山活動的調查監測方面，建立了溫泉水質、火山氣體以及地下溫度等多面向之監測站，長時間蒐集火山地區之環境資料，了解長時間之地球化學及地下熱流變化，並配合大台北計畫項下子計畫所布設的火山微震觀測站網資料，進一步評估火山之活動性。故過去八年在大屯火山群的火山流體和地熱監測結果顯示：
+1、大屯火山群的溫泉水成因，馬槽和硫磺谷的溫泉可能與岩漿源有關，地熱谷溫泉可能是天水和地層中的滷水混合形成的，而小油坑溫泉則受到蒸發作用的影響。
+2、溫泉水的變化與微震發生頻率有一定的關係，顯示水質的變化可能與地底下的流體因素有關。
+3、溫泉水水質和水化學的監測顯示過去幾年的變化相對穩定。
+4、火山氣體分析結果顯示出大部分地區維持穩定現象。由氦同位素資料，以及微震網的資料顯示大屯火山仍然相當活躍，而最有可能存在岩漿庫的地方為大油坑地區。其擁有最高的氦同位素比值，而且微震發生主要集中在其下約4~5公里處。目前氦同位素分析結果同樣顯示本地區仍相對穩定，無明顯變化。
+5、大油坑地區的氯離子濃度仍然維持在高值。大油坑HCl含量增加可能是受到突然間溫度增加的影響所造成。而硫化物又轉變為以H2S為主，但HCl的含量卻上升，為了區別是否為採樣上的問題或是HCl濃度確實有增加的現象，對於往後的採樣密集性也需增加。
+6、八煙臨時監測站初步結果顯示，氡氣濃度約為1,432 Bq m-3；在2011年11月6日晚間出現最高值3,636 Bq m-3，不過隨後即快速降低至背景值，初步判定是受到雨量的影響。大量的降雨使得大量的雨水向下滲入土壤空隙中，初期原本存在於空隙中的土壤氣體會被趕出空隙向上排出，之後水分將填滿土壤的空隙；因此在大雨期間會出現氡氣濃度值先升後降的現象。
+7、在小油坑監測站監測期間常有超出偵測極限的現象發生，初步認為可能是受到濕度的影響，未來將縮短更換分子篩GZP的週期時間；我們也不排除氣體濃度是否有增高的趨勢，未來將增加人工現地採樣的次數，將採回的氣體樣本經實驗室較精密儀器分析其濃度加以確認其分析結果。
+8、菁山地溫監測井井內各深度溫度約17.17~21.43℃，溫度變化之標準差分別約0.0078~0.6960℃，整口井溫呈現慢慢下降的趨勢，地溫梯度以深度100公尺為界主要可分成兩段，上段0-100公尺約2.6 ℃/100m，下段100-190公尺約0.6 ℃/100m。
+9、擎天崗地溫監測井井內各深度溫度約17.88~105.72℃，溫度變化之標準差分別約0.1580~0.7874℃，深度200公尺約25.0℃，比同深度的菁山站高約4.0℃，顯示本測站在大屯火山區較接近熱源。地溫梯度以深度200公尺為界主要可分成兩段，上段0-200公尺約3.5℃/100m，下段200-470公尺約29.0℃/100m，地溫梯度顯示監測區地下水可能有一厚度約200公尺的對流包，另外，深度470公尺105.72℃的溫度則可能在井內啟動約2.5公尺的熱對流包，本站2010年和2011年共發現5次與氣候無關的熱脈衝事件，值得後續追蹤探討。
+10、龜山島地溫監測井井內各深度溫度約22.03~34.02℃，溫度變化之標準差分別約0.0086~0.2744℃，各深度溫度變化也顯示整口井溫度有慢慢下降趨勢，地溫梯度大致可分兩段，淺於100公尺的梯度約-1.5℃/100m，100公尺以下的梯度約9.7℃/100m，2006-2009年夏季期間均觀測到溫度突然改變的熱脈衝事件，溫度變化-0.023~0.015℃溫度，確定係受颱風影響，颱風影響地溫的機制目前並不清楚，是否可能為颱風引發慢地震造成地溫的改變，此部分仍有很大的探討空間。
+</code><button class="copy-code-button">Copy</button></pre></div></div></div><div class="heading-wrapper"><h6 data-heading="${}^{^{^{^{^{^{^{^{^{^{^{[Placeholder]}}}}}}}}}}}$" class="heading" id="${}^{^{^{^{^{^{^{^{^{^{^{[Placeholder]}}}}}}}}}}}$"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-texatom texclass="ORD"></mjx-texatom><mjx-script style="vertical-align: 0.363em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-math></mjx-container></span></h6><div class="heading-children"><div><ul>
+<li data-line="0"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>台灣北部火山地區背景環境資料監測-101/102/103/104
+<ul>
+<li data-line="1">氦同位素：1999~2016</li>
+<li data-line="2">He-N2-Ar：2010~2015</li>
+<li data-line="3">氡氣濃度-濕度-氣溫-土壤溫度-雨量-地震-(氣壓、CO2通量/濃度)：2012~2015</li>
+<li data-line="4">逸氣溫-氫氯酸-二氧化硫-CO2-氫化硫-<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.032em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>、三角圖：2003~2016(各站點)</li>
+<li data-line="5">TDS-pH-導電度-土壤溫度-日雨量：2004~2015(各站點)</li>
+<li data-line="6">日雨量-[很多離子]：2004~2015(各站點)</li>
+<li data-line="7">深度溫度：2006-2015</li>
+<li data-line="8">地溫梯度：2012-2015</li>
+</ul>
+</li>
+<li data-line="9"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>台灣北部火山活動觀測研究－台灣北部火山活動地區密集陣列觀測研究期末報告
+<ul>
+<li data-line="10">微震與地磁 (有一些很難的地震學東東)</li>
+</ul>
+</li>
+<li data-line="11"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山觀測中心建置研究成果報告(精簡版)
+<ul>
+<li data-line="12">設備細節，無數據</li>
+</ul>
+</li>
+<li data-line="13"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>大屯火山觀測站防災應用(II) - 105年
+<ul>
+<li data-line="14">降雨-CO2濃度-通量：2008-2009</li>
+<li data-line="15">水準變化：2007-2013</li>
+</ul>
+</li>
+<li data-line="16"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>臺灣北部火山地區地震與地球化學監測月報 - 2016年03月
+<ul>
+<li data-line="17"></li>
+</ul>
+</li>
+<li data-line="18"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>臺灣北部火山活動觀測研究精進計畫－臺灣北部火山地區地震與地球化學監測第二期
+<ul>
+<li data-line="19"></li>
+</ul>
+</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h5 data-heading="在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？" class="heading" id="在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？</h5><div class="heading-children"></div></div><div class="heading-wrapper"><h5 data-heading="觀察逐時的圖表，有什麼較為特殊的現象？" class="heading" id="觀察逐時的圖表，有什麼較為特殊的現象？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>觀察逐時的圖表，有什麼較為特殊的現象？</h5><div class="heading-children"></div></div><div class="heading-wrapper"><h5 data-heading="哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？" class="heading" id="哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？</h5><div class="heading-children"></div></div><div class="heading-wrapper"><h5 data-heading="還有哪些數據or關係圖是前人未提到但想到可以試著探討的？" class="heading" id="還有哪些數據or關係圖是前人未提到但想到可以試著探討的？"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>還有哪些數據or關係圖是前人未提到但想到可以試著探討的？</h5><div class="heading-children"></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="" class="heading" id=""><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div></h2><div class="heading-children"><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="專題研究札記.html#專題研究札記"><div class="tree-item-contents heading-link" heading-name="專題研究札記"><span class="tree-item-title">專題研究札記</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#問題"><div class="tree-item-contents heading-link" heading-name="問題"><span class="tree-item-title">問題</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20230904"><div class="tree-item-contents heading-link" heading-name="20230904"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20230904</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#目標"><div class="tree-item-contents heading-link" heading-name="目標"><span class="tree-item-title">目標</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#研究階段?"><div class="tree-item-contents heading-link" heading-name="研究階段?"><span class="tree-item-title">研究階段?</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#筆記"><div class="tree-item-contents heading-link" heading-name="筆記"><span class="tree-item-title">筆記</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#連結與資料們"><div class="tree-item-contents heading-link" heading-name="連結與資料們"><span class="tree-item-title">連結與資料們</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20230911"><div class="tree-item-contents heading-link" heading-name="20230911"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20230911</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#目標"><div class="tree-item-contents heading-link" heading-name="目標"><span class="tree-item-title">目標</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#筆記"><div class="tree-item-contents heading-link" heading-name="筆記"><span class="tree-item-title">筆記</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#參資"><div class="tree-item-contents heading-link" heading-name="參資"><span class="tree-item-title">參資</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#20230923"><div class="tree-item-contents heading-link" heading-name="20230923"><span class="tree-item-title">20230923</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20230925"><div class="tree-item-contents heading-link" heading-name="20230925"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20230925</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#目標"><div class="tree-item-contents heading-link" heading-name="目標"><span class="tree-item-title">目標</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20231030"><div class="tree-item-contents heading-link" heading-name="20231030"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20231030</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#參考研究目的"><div class="tree-item-contents heading-link" heading-name="參考研究目的"><span class="tree-item-title">參考研究目的</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20231106"><div class="tree-item-contents heading-link" heading-name="20231106"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20231106</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#worth_mentioning"><div class="tree-item-contents heading-link" heading-name="worth mentioning"><span class="tree-item-title">worth mentioning</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#20231218"><div class="tree-item-contents heading-link" heading-name="20231218"><span class="tree-item-title">20231218</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20231225"><div class="tree-item-contents heading-link" heading-name="20231225"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20231225</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#實驗內容（簡易版）"><div class="tree-item-contents heading-link" heading-name="實驗內容（簡易版）"><span class="tree-item-title">實驗內容（簡易版）</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20240126"><div class="tree-item-contents heading-link" heading-name="20240126"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20240126</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="專題研究札記.html#實驗方式"><div class="tree-item-contents heading-link" heading-name="實驗方式"><span class="tree-item-title">實驗方式</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#20240219"><div class="tree-item-contents heading-link" heading-name="20240219"><span class="tree-item-title">20240219</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="專題研究札記.html#麵包板不要接錯__![](https://i.imgur.com/RMXPY1y.png)"><div class="tree-item-contents heading-link" heading-name="麵包板不要接錯  ![](https://i.imgur.com/RMXPY1y.png)"><span class="tree-item-title">麵包板不要接錯  <img src="https://i.imgur.com/RMXPY1y.png" referrerpolicy="no-referrer"></span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#20240226"><div class="tree-item-contents heading-link" heading-name="20240226"><span class="tree-item-title">20240226</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#20240307"><div class="tree-item-contents heading-link" heading-name="20240307"><span class="tree-item-title">20240307</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#20240311"><div class="tree-item-contents heading-link" heading-name="20240311"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">20240311</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#20240314"><div class="tree-item-contents heading-link" heading-name="20240314"><span class="tree-item-title">20240314</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#20240318"><div class="tree-item-contents heading-link" heading-name="20240318"><span class="tree-item-title">20240318</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#20240325"><div class="tree-item-contents heading-link" heading-name="20240325"><span class="tree-item-title">20240325</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="專題研究札記.html#整理資料"><div class="tree-item-contents heading-link" heading-name="整理資料"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">整理資料</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#取得資料的年月區間（20xx年？月～20xx年？月）"><div class="tree-item-contents heading-link" heading-name="取得資料的年月區間（20xx年？月～20xx年？月）"><span class="tree-item-title">取得資料的年月區間（20xx年？月～20xx年？月）</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="專題研究札記.html#這幾年的大屯火山前人研究報告重點摘要"><div class="tree-item-contents heading-link" heading-name="這幾年的大屯火山前人研究報告重點摘要"><span class="tree-item-title">這幾年的大屯火山前人研究報告重點摘要</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="專題研究札記.html#是否與目前取得資料的年月區間重疊？重疊的是哪些時段？"><div class="tree-item-contents heading-link" heading-name="是否與目前取得資料的年月區間重疊？重疊的是哪些時段？"><span class="tree-item-title">是否與目前取得資料的年月區間重疊？重疊的是哪些時段？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="專題研究札記.html#過去的研究結果(93~100)"><div class="tree-item-contents heading-link" heading-name="過去的研究結果(93~100)"><span class="tree-item-title">過去的研究結果(93~100)</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="6"><a class="tree-link" href="專題研究札記.html#${}^{^{^{^{^{^{^{^{^{^{^{[Placeholder]}}}}}}}}}}}$"><div class="tree-item-contents heading-link" heading-name="${}^{^{^{^{^{^{^{^{^{^{^{[Placeholder]}}}}}}}}}}}$"><span class="tree-item-title"><p><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-texatom texclass="ORD"></mjx-texatom><mjx-script style="vertical-align: 0.363em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-msup><mjx-mi class="mjx-n"></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msup></mjx-math></mjx-container></span></p></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="專題研究札記.html#在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？"><div class="tree-item-contents heading-link" heading-name="在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？"><span class="tree-item-title">在前人研究中，哪些資料已被畫成逐時（年or月or日）的圖表？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="專題研究札記.html#觀察逐時的圖表，有什麼較為特殊的現象？"><div class="tree-item-contents heading-link" heading-name="觀察逐時的圖表，有什麼較為特殊的現象？"><span class="tree-item-title">觀察逐時的圖表，有什麼較為特殊的現象？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="專題研究札記.html#哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？"><div class="tree-item-contents heading-link" heading-name="哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？"><span class="tree-item-title">哪些觀測數據間具有正or負相關？是否已有因果性的敘述？前人研究中是否有圖表可佐證？</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="5"><a class="tree-link" href="專題研究札記.html#還有哪些數據or關係圖是前人未提到但想到可以試著探討的？"><div class="tree-item-contents heading-link" heading-name="還有哪些數據or關係圖是前人未提到但想到可以試著探討的？"><span class="tree-item-title">還有哪些數據or關係圖是前人未提到但想到可以試著探討的？</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="專題研究札記.html#"><div class="tree-item-contents heading-link" heading-name=""><span class="tree-item-title"></span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
