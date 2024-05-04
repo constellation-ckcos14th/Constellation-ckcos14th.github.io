@@ -7,16 +7,16 @@
       
       <table class="nice-table">
         <tr>
-          <th>Name</th>
-          <th>Index</th>
-          <th>Title</th>
-          <th>Time</th>
+          <th>姓名</th>
+          <th>時間</th>
+          <th>組別</th>
+          <th>主題</th>
         </tr>
         <tr v-for="group in day1Floor4GroupList" :key="group.id">
           <td>{{ group.name }}</td>
           <td>{{ group.mark }}</td>
+          <td>{{ group.group }}</td>
           <td class="title">{{ group.title }}</td>
-          <td>{{ group.time }}</td>
         </tr>
       </table>
     </div>

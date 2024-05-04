@@ -7,35 +7,35 @@
         "title": "內心、旁心，兩心一家親",
         "author": "鍾承軒",
         "description": "",
-        "images": ["30.png"]
+        "photos": ["30.png"]
       },
       {
         "id": 26,
         "title": "低維度的cap set大小探討",
         "author": "鮑立仁",
         "description": "",
-        "images": ["26.png"]
+        "photos": ["26.png"]
       },
       {
         "id": 21,
         "title": "Frieze Pattern 結構與性質之探討",
         "author": "彭可翰",
         "description": "",
-        "images": ["21.png"]
+        "photos": ["21.png"]
       },
       {
         "id": 2,
         "title": "彩球神算",
         "author": "王品硯",
         "description": "",
-        "images": ["2.png"]
+        "photos": ["2.png"]
       },
       {
         "id": 23,
         "title": "得知紙牌總和奇偶的最小抽牌次數",
         "author": "黃羶宇",
         "description": "",
-        "images": ["23.png"]
+        "photos": ["23.png"]
       }
     ]
   },
@@ -47,35 +47,35 @@
         "title": "米氏散射對奈米粒子的散射光譜之影響",
         "author": "曾宥鈞\n林柏安",
         "description": "",
-        "images": ["22.png"]
+        "photos": ["22.png"]
       },
       {
         "id": 27,
         "title": "量子漫步演算法模擬股票走勢機率分布",
         "author": "戴聖文",
         "description": "",
-        "images": ["27.png"]
+        "photos": ["27.png"]
       },
       {
         "id": 14,
         "title": "利用六軸加速度計與SLAM演算法回饋控制之車輛動態防側傾駕駛輔助系統",
         "author": "邱威翔",
         "description": "",
-        "images": ["14.png"]
+        "photos": ["14.png"]
       },
       {
         "id": 18,
         "title": "關於同心管機器人的使用和研究",
         "author": "陳芃聿",
         "description": "",
-        "images": ["18.png"]
+        "photos": ["18.png"]
       },
       {
         "id": 29,
         "title": "以數據驅動方式探究類星體於可見光與無線電光譜之性質關聯",
         "author": "謝濟遠",
         "description": "",
-        "images": ["29.png"]
+        "photos": ["29.png"]
       }
     ]
   },
@@ -87,21 +87,21 @@
         "title": "定向演化PsiK酶突變株與血清素之製藥潛在應用",
         "author": "朱秝辰",
         "description": "",
-        "images": ["3.png"]
+        "photos": ["3.png"]
       },
       {
         "id": 8,
         "title": "透過超音波敏感性聚合物微胞達成藥物投遞減少根管治療癒後復發的應用",
         "author": "林奕丞\n祝楷棣",
         "description": "",
-        "images": ["8.png"]
+        "photos": ["8.png"]
       },
       {
         "id": 11,
         "title": "甲氧基修飾吲哚五號碳之全合成與優化",
         "author": "林峻亨",
         "description": "",
-        "images": ["11.png"]
+        "photos": ["11.png"]
       }
     ]
   },
@@ -113,56 +113,56 @@
         "title": "PsiM 與各種受質的 hplc 反應",
         "author": "蕭宇鴻",
         "description": "", 
-        "images": ["25.png"]
+        "photos": ["25.png"]
       },
       {
         "id": 19,
         "title": "牙本質黏著劑於氧化鋯-複合材料界面之黏著性能探討",
         "author": "陳宥潾",
         "description": "", 
-        "images": ["19.png"]
+        "photos": ["19.png"]
       },
       {
         "id": 5,
         "title": "運用化學同位素標記開發一鍋化GHB檢測之定量方法",
         "author": "宋秉倫",
         "description": "", 
-        "images": ["5.png"]
+        "photos": ["5.png"]
       },
       {
         "id": 24,
         "title": "選擇性促進黏膜上皮再生的複合生物相容材料之研究",
         "author": "楊爵禧",
         "description": "", 
-        "images": ["24.png"]
+        "photos": ["24.png"]
       },
       {
         "id": 6,
         "title": "以自微乳化系統製作米諾地爾的新型傳遞方式",
         "author": "李佳承",
         "description": "", 
-        "images": ["6.png"]
+        "photos": ["6.png"]
       },
       {
         "id": 9,
         "title": "HrmJ酵素反應之研究",
         "author": "林威樂",
         "description": "", 
-        "images": ["9.png"]
+        "photos": ["9.png"]
       },
       {
         "id": 12,
         "title": "研究TXNDC5蛋白對新內膜增生的影響機制",
         "author": "林庭宇",
         "description": "", 
-        "images": ["12.png"]
+        "photos": ["12.png"]
       },
       {
         "id": 13,
         "title": "DNA甲基轉移酶3A調控第二型傳統樹突細胞功能",
         "author": "林竣宇",
         "description": "", 
-        "images": ["13.png"]
+        "photos": ["13.png"]
       }
     ]
   },
@@ -174,14 +174,14 @@
         "title": "以Gaia DR3星點觀測數據進行疏散星團NGC 2420與NGC 2243的初步探討",
         "author": "陳韋達",
         "description": "", 
-        "images": ["20.png"]
+        "photos": ["20.png"]
       },
       {
         "id": 28,
         "title": "2006年至2019年大屯火山地區地溫與噴氣孔CO₂通量變動紀錄及其特性分析",
         "author": "謝佾熙",
         "description": "", 
-        "images": ["28.png"]
+        "photos": ["28.png"]
       }
     ]
   },
@@ -193,28 +193,28 @@
         "title": "利用史書中地理空間資訊重建漢代西域國家地圖",
         "author": "林昀翰",
         "description": "", 
-        "images": ["7.png"]
+        "photos": ["7.png"]
       },
       {
         "id": 4,
         "title": "利用U-Net切割大腦皮質層並協助提早發現病人大腦的變化",
         "author": "吳柏曜",
         "description": "", 
-        "images": ["4.png"]
+        "photos": ["4.png"]
       },
       {
         "id": 1,
         "title": "自動化地理對位",
         "author": "王以安",
         "description": "", 
-        "images": ["1.png"]
+        "photos": ["1.png"]
       },
       {
         "id": 15,
         "title": "四色定理中規則集之優化",
         "author": "施竣耀",
         "description": "", 
-        "images": ["15.png"]
+        "photos": ["15.png"]
       }
     ]
   }

@@ -44,7 +44,8 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-
+    </div>
+    <div class="div-page">
       <div class="description">
         <h2>活動宗旨與簡介</h2>
         <p>{{ eventDescription }}</p>
@@ -62,7 +63,7 @@ const groupPhotoSrc = "groupPhoto.jpg";
 const eventDate = "2024年5月20 (週一)";
 const eventTime = "13:00 - 17:00";
 const eventLocation = "100台北市中正區南海路56號";
-const eventDescription = `本獨立研究成果發表會旨在提倡科學研究，藉由各組別的成果報告，認識不同科目的專業領域，提升大家對於科學的愛好以及熱忱。本校科學班的專題研究組別共分成數學、物理、化學、生物、資訊、地科六個科目，各組對該科的知識內容進行更深一層的探討，結合文獻的探究及自己的創意，完成一篇專題獨立研究。藉由辦理本活動鼓勵數資班學生積極投入實驗研究，並讓同學們能有機會於本活動發表兩年來努力得到的成果。除此之外也希望透過這個活動促進校際間的學術交流，且讓大家能一睹學生們在專題研究過程中的收穫與成長。`;
+const eventDescription = `本獨立研究成果發表會旨在提倡科學研究，藉由各組別的成果報告，認識不同科目的專業領域，提升大家對於科學的愛好以及熱忱。本校科學班的專題研究組別共分成數學、物理、化學、生物、資訊、地科六個科目，各組對該科的知識內容進行更深一層的探討，結合文獻的探究及自己的創意，完成一篇專題獨立研究。藉由辦理本活動鼓勵科學班學生積極投入實驗研究，並讓同學們能有機會於本活動發表兩年來努力得到的成果。除此之外也希望透過這個活動促進校際間的學術交流，且讓大家能一睹學生們在專題研究過程中的收穫與成長。`;
 const googleCalendarLink = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nm8zcm80dm5jYzVoOTg3am9oMXVhdWFpZHQgNTAzYjEzODczMGZmMzY3ZGE1MzE4MDgwMTk1YTNlZjUwNDQyZTJkZjBlOGVhYjJjMGE1MjAyMTdhZDE1OTY0NUBn&tmsrc=503b138730ff367da5318080195a3ef50442e2df0e8eab2c0a520217ad159645%40group.calendar.google.com";
 const googleMapsLink = "https://goo.gl/maps/kWBUJyyp6iXVHmib8";
 const googleMapsEmbedSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0972926964214!2d121.51011581643546!3d25.030772083973787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9483fb05b03%3A0xe2d4710b90afdf1a!2z6Ie65YyX5biC56uL5bu65ZyL6auY57Sa5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1680545181231!5m2!1szh-TW!2stw";

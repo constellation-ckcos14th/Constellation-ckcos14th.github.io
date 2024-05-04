@@ -1,7 +1,7 @@
 <template>
   <div class="tab-page schedule-pg">
     <h1>Schedule</h1>
-    <img src="schedule.png" alt="學長對不起，我的網頁死了" style="display:block; margin:auto;">
+    <img src="/public/schedule.png" alt="學長對不起，我的網頁死了" style="display:block; margin:auto;">
     <div class="div-page">
       <router-link :to="{ name: 'Day1-2F' }" class="sublink">
         <h2>夢紅樓 2F展演廳 (A組)</h2>

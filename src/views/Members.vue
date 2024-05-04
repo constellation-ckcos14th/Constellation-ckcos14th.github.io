@@ -2,7 +2,7 @@
   import {ref, onMounted} from "vue";
 
   const popupVisible = ref(false);
-  const selectedWork = ref(null);
+  const selectedMember = ref(null);
   var closetime = Date.now() - 300;
 
   import members from "/src/members.json";
@@ -11,14 +11,14 @@
   function showPopup(work) {
     if (popupVisible.value != true && Date.now() - closetime > 250) {
       //document.body.classList.add("popup-show");
-      selectedWork.value = work;
+      selectedMember.value = work;
       popupVisible.value = true;
     }
   }
   function hidePopup() {
     //document.body.classList.add("popup-hide");
     popupVisible.value = false;
-    selectedWork.value = null;
+    selectedMember.value = null;
     closetime = Date.now();
   }
   onMounted(() => {
@@ -51,12 +51,15 @@
       
       <div v-if="popupVisible" class="popup">
           <div class="popup__title">
-              <h2 class="no-top-bottom-margin">{{ selectedWork.name }}</h2>
+              <h2 class="no-top-bottom-margin">{{ selectedMember.name }}</h2>
               <button class="close-btn" @click="hidePopup" title="按Esc也可以關掉喔">🞫</button>
           </div>
           <div class="popup__content">
-            <!-- <img :src="'/works/'+selectedWork.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedWork.mark+'.jpg'"> -->
-            <p class="popup__description">{{ selectedWork.description }}</p>
+            <!-- <img :src="'/works/'+selectedMember.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedMember.mark+'.jpg'"> -->
+            <p class="popup__description">{{ selectedMember.description }}</p>
+            <div v-for="img in selectedMember.photos" :key="img.id">
+                <img :src="'/members/'+img"   class="members-photo"   :alt="'/members/'+img">
+            </div>
           </div>
       </div>
   </div>
@@ -124,15 +127,12 @@ a:hover{ color: rgb(0, 144, 216); }
   width: 80%;
   height: auto;
   max-height: 90%;
-  overflow: visible;
-  overflow-y: auto;
+  overflow-x: auto;
   z-index: 100;
   background-color: rgba(30, 32, 48, 0.69);
   box-shadow: 0 0 20px rgba(194, 233, 241, 0.568);
   backdrop-filter: blur(10px);
   border-radius: 30px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   animation: fade-in-animation ease-in 0.2s;
@@ -153,15 +153,13 @@ a:hover{ color: rgb(0, 144, 216); }
 }
 
 .popup__content {
-  padding: 2vh;
   max-height: 70vh;
-  overflow-y: auto;
+  text-overflow: wrap;
   text-align: left;
-  white-space:pre;
-  word-break: break-all;
+  white-space:pre-wrap;
 }
 
-.works-photo {
+.members-photo {
   margin-bottom: 30px;
   padding: 15px;
   width: 60%;

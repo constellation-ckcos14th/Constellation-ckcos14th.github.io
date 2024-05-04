@@ -29,7 +29,7 @@ const isMobile = () => {
     methods: {
       change_background()  {
         var nnn = getRandom(0,88.999)
-        var qq = "url(background/";
+        var qq = "url(/background/";
         var newbackground = qq.concat(nnn).concat(".png)");
         console.log(nnn);
         const appselector = this.$refs.appqq;
