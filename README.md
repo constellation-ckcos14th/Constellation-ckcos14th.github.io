@@ -21,7 +21,7 @@ Welcome to the repository for the Jianguo High School Class of Sicence class pro
 
 ## 相關連結
 
-[__instagram__](https://www.instagram.com/ckcos14th.constellation/)  [__youtube__](https://www.youtube.com/@constellation_ckcos14)
+[__instagram__](https://www.instagram.com/constellation_ckcos14/)  [__youtube__](https://www.youtube.com/@constellation_ckcos14)
 
 ## 團體照
 
