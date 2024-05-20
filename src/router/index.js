@@ -42,13 +42,13 @@ const routes = [
     component: Members,
   },
   {
-    path: "/day1-2F",
-    name: "Day1-2F",
+    path: "/2F",
+    name: "2F",
     component: ScheduleChild1,
   },
   {
-    path: "/day1-4F",
-    name: "Day1-4F",
+    path: "/4F",
+    name: "4F",
     component: ScheduleChild2,
   },
   {

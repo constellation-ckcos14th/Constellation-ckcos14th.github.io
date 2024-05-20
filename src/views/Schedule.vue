@@ -3,12 +3,12 @@
     <h1>Schedule</h1>
     <img src="/public/schedule.png" alt="學長對不起，我的網頁死了" style="display:block; margin:auto;">
     <div class="div-page">
-      <router-link :to="{ name: 'Day1-2F' }" class="sublink">
+      <router-link :to="{ name: '2F' }" class="sublink">
         <h2>夢紅樓 2F展演廳 (A組)</h2>
       </router-link>
     </div>
     <div class="div-page">
-      <router-link :to="{ name: 'Day1-4F' }" class="sublink">
+      <router-link :to="{ name: '4F' }" class="sublink">
         <h2>夢紅樓 4F國際會議廳 (B組)</h2>
       </router-link>
     </div>

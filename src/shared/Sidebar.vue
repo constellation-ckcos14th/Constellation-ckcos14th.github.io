@@ -24,6 +24,14 @@
         <div class="seperated_line"></div>
 
         <div class="mobile-link">
+          <router-link :to="{ name: 'Members' }" class="hover-mobile-link" @click="uncheck">
+            Members
+          </router-link>
+        </div>
+
+        <div class="seperated_line"></div>
+
+        <div class="mobile-link">
           <router-link :to="{ name: 'Schedule' }" class="hover-mobile-link" @click="uncheck">
             Schedule
           </router-link>
@@ -163,7 +171,7 @@ function toggleNavbar() {
 .sidebar {
   font-weight: bold;
   width: 25%;
-  height: 100vh;
+  height: 140vh;
   position: absolute;
   right: 40px;
   top: 100px;

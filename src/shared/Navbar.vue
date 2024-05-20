@@ -117,7 +117,7 @@ nav.navbar {
   border-color: hsl(272, 71%, 81%);
   background-color: hsl(272, 71%, 81%);
   box-shadow: 0 0 0.5em 0.5px hsl(272, 100%, 81%);
-  animation: text-flicker 3s linear infinite;
+  animation: text-flicker 9s linear infinite;
   color: rgb(55, 55, 55);
 }
 
@@ -134,7 +134,7 @@ nav.navbar {
   border-color: hsl(186, 100%, 78%);
   background-color: hsl(186 100% 78%);
   box-shadow: 0 0 0.75em 1px hsl(186 100% 78%);
-  animation: text-flicker 6s linear infinite;
+  animation: text-flicker 9s linear infinite;
   color: rgb(55, 55, 55);
 }
 
@@ -148,7 +148,7 @@ nav.navbar {
   border-color: hsl(65, 100%, 89%);
   background-color: hsl(66, 83%, 93%);
   box-shadow: 0 0 0.5em 0 hsl(66, 83%, 93%);
-  animation: text-flicker 6s linear infinite;
+  animation: text-flicker 9s linear infinite;
   color: black;
 }
 

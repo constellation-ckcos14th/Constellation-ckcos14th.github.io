@@ -11,34 +11,42 @@
     <div class="music-mv div-page">
       <h2>成發主題MV</h2>
       <div id="wrapper">
-        <iframe src="https://www.youtube-nocookie.com/embed/4L9CUCTfsyQ?rel=0" title="YouTube video player"
+        <iframe src="https://www.youtube-nocookie.com/embed/csln2lMUCHU?rel=0" title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
       </div>
+      <br>
+      <p>&emsp;歡迎大家和我們一起唱喔!</p>
       <div>
         <div class="infobar" @click="toggleExpanded">
           <span class="title">{{ title }}</span>
           <button class="expand-button">{{ expanded ? '▲' : '▼' }}</button>
         </div>
-        <div v-if="expanded" class="expanded-content font-sans">
-          <p>{{ text }}</p>
+        <div v-if="expanded" class="expanded-content font-sans" >
+          <img src="/public/lyrics1.jpg" class="lyrics">
+          <br>
+          <img src="/public/lyrics2.jpg" class="lyrics">
+          <!-- <p>{{ text }}</p>
 
           <pre v-for="(content, index) in contents" :key="index" class="font-sans" :class="content.class">{{
               content.text
-              }}</pre>
+              }}
+          </pre> -->
         </div>
       </div>
     </div>
 
     
-    <div class="promotionalImage div-page">
+    <!-- <div class="promotionalImage div-page">
       <h2>宣傳圖</h2>
       <img :src="promotionalImage" alt="Promotional Image"/>
-    </div>
+    </div> -->
 
     <div class="invitation div-page">
       <h2>邀請函</h2>
-      <img :src="invitationLetter" alt="Invitation Letter"/>
+      <img :src="invitationletter1" alt="Invitation Letter Front"/>
+      <br>
+      <img :src="invitationletter2" alt="Invitation Letter Back"/>
     </div>
   </div>
 </template>
@@ -46,7 +54,8 @@
 <script setup lang="ts">
 import {ref} from 'vue';
 
-const invitationLetter = "invitationLetter.png";
+const invitationletter1 = "invitation1.png";
+const invitationletter2 = "invitation2.png";
 const promotionalImage = "promotionalImage.png";
 
 const expanded = ref(false);
@@ -175,5 +184,11 @@ const contents = [
   .expanded-content {
     margin-top: 8px;
   }
+}
+.lyrics {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
 }
 </style>

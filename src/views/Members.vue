@@ -4,16 +4,27 @@
   const popupVisible = ref(false);
   const selectedMember = ref(null);
   var closetime = Date.now() - 300;
+  var closetimeqq= Date.now() - 300;
+  var qqvisible = false;
+  const emptydescription = "目前為空(之後會刪掉)";
 
   import members from "/src/members.json";
   import members_description from "/src/members-description.json";
 
   function showPopup(work) {
-    if (popupVisible.value != true && Date.now() - closetime > 250) {
+    if (popupVisible.value != true && Date.now() - closetime > 250 && work.description != emptydescription) {
       //document.body.classList.add("popup-show");
       selectedMember.value = work;
       popupVisible.value = true;
     }
+    if (work.description == emptydescription) {
+      showqq();
+    }
+  }
+  function showqq() {
+    qqvisible = true;
+    closetimeqq = Date.now() + 2000;
+    console.log(qqvisible);
   }
   function hidePopup() {
     //document.body.classList.add("popup-hide");
@@ -55,13 +66,20 @@
               <button class="close-btn" @click="hidePopup" title="按Esc也可以關掉喔">🞫</button>
           </div>
           <div class="popup__content">
-            <!-- <img :src="'/works/'+selectedMember.mark+'.jpg'" class="works-photo" :alt="'/works/'+selectedMember.mark+'.jpg'"> -->
             <p class="popup__description">{{ selectedMember.description }}</p>
             <div v-for="img in selectedMember.photos" :key="img.id">
                 <img :src="'/members/'+img"   class="members-photo"   :alt="'/members/'+img">
             </div>
           </div>
       </div>
+
+      <!-- <div v-if="qqvisible" class="popup">
+          <div class="popup__content">嗚嗚嗚 </div>   
+          <div class="popup__title">
+              <h2 class="no-top-bottom-margin">{{ selectedMember.name }}</h2>
+              <button class="close-btn" @click="hidePopup" title="按Esc也可以關掉喔">🞫</button>
+          </div>
+      </div> -->
   </div>
 </template>
 
@@ -196,6 +214,25 @@ a:hover{ color: rgb(0, 144, 216); }
   max-width: 700px;
   padding: 2% 2% 2% 2%;
   text-align: left;
+}
+
+.qq {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  max-height: 90%;
+  overflow-x: auto;
+  z-index: 100;
+  background-color: rgba(30, 32, 48, 0.69);
+  box-shadow: 0 0 20px rgba(194, 233, 241, 0.568);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in-animation ease-in 0.2s;
 }
 
 @media (max-width: 2000px) {
